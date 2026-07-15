@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { RootLayoutClient } from "../components/layout/RootLayoutClient";
-import { GA_MEASUREMENT_ID } from "../lib/analytics";
+import { GA_MEASUREMENT_ID, CLARITY_PROJECT_ID } from "../lib/analytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -44,6 +44,20 @@ export default function RootLayout({
               }}
             />
           </>
+        ) : null}
+        {CLARITY_PROJECT_ID ? (
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window,document,"clarity","script","${CLARITY_PROJECT_ID}");
+              `,
+            }}
+          />
         ) : null}
         <script
           dangerouslySetInnerHTML={{

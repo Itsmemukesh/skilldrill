@@ -1,16 +1,10 @@
 import { SkillCategory, Difficulty } from '../types';
-import { GA_MEASUREMENT_ID } from '../lib/analytics';
 
 /**
- * Analytics integration for GA4 and Microsoft Clarity.
- *
- * GA4 is loaded in `src/app/layout.tsx` <head> (Google's recommended placement).
- * Clarity is injected here on app mount. Custom quiz events use `trackEvent`.
- *
- * Override the GA ID with `NEXT_PUBLIC_GA_ID` in `.env.local` or GitHub Actions secrets.
+ * Custom analytics event helpers for GA4.
+ * GA4 and Microsoft Clarity scripts load in `src/app/layout.tsx` <head>.
+ * Set `NEXT_PUBLIC_GA_ID` and `NEXT_PUBLIC_CLARITY_ID` in `.env.local` or GitHub Actions secrets.
  */
-
-const CLARITY_PROJECT_ID = typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_CLARITY_ID : null;
 
 // Safe check to determine if GA is hydrated in the browser
 const getGtag = () => {
@@ -21,32 +15,7 @@ const getGtag = () => {
 };
 
 export const initializeAnalytics = (): void => {
-  if (typeof window === 'undefined') return;
-
-  if (GA_MEASUREMENT_ID) {
-    console.log(`[Analytics] GA4 active with ID: ${GA_MEASUREMENT_ID}`);
-  }
-
-  // Microsoft Clarity Script Injection
-  if (CLARITY_PROJECT_ID) {
-    const clarityScript = document.createElement('script');
-    clarityScript.type = 'text/javascript';
-    clarityScript.innerHTML = `
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window,document,"clarity","script","${CLARITY_PROJECT_ID}");
-    `;
-    document.head.appendChild(clarityScript);
-    console.log(`[Analytics] Clarity Initialized with ID: ${CLARITY_PROJECT_ID}`);
-  } else {
-    if (process.env.NODE_ENV === 'development') {
-      console.debug('[Analytics] Clarity disabled in development. Set NEXT_PUBLIC_CLARITY_ID in .env.local to enable.');
-    } else {
-      console.warn('[Analytics] Microsoft Clarity ID missing. Session recording inactive.');
-    }
-  }
+  // GA4 and Clarity load from layout.tsx <head>. Kept for backward compatibility.
 };
 
 export const trackEvent = (eventName: string, params?: Record<string, any>): void => {
