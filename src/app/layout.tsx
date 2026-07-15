@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { RootLayoutClient } from "../components/layout/RootLayoutClient";
+import { GA_MEASUREMENT_ID } from "../lib/analytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,6 +27,24 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        {GA_MEASUREMENT_ID ? (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_MEASUREMENT_ID}');
+                `,
+              }}
+            />
+          </>
+        ) : null}
         <script
           dangerouslySetInnerHTML={{
             __html: `

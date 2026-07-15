@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next';
 
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
-const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'SkillDrill';
+const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'skilldrill';
 const basePath =
   process.env.NEXT_PUBLIC_BASE_PATH ??
   (isGithubPages ? `/${repositoryName}` : '');

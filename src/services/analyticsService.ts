@@ -1,17 +1,15 @@
 import { SkillCategory, Difficulty } from '../types';
+import { GA_MEASUREMENT_ID } from '../lib/analytics';
 
 /**
  * Analytics integration for GA4 and Microsoft Clarity.
  *
- * Local development:
- *   Copy `.env.example` to `.env.local` and add your IDs when ready.
- *   Missing IDs in development are expected and analytics events log to the console.
+ * GA4 is loaded in `src/app/layout.tsx` <head> (Google's recommended placement).
+ * Clarity is injected here on app mount. Custom quiz events use `trackEvent`.
  *
- * GitHub Pages production:
- *   Add `NEXT_PUBLIC_GA_ID` and `NEXT_PUBLIC_CLARITY_ID` as repository secrets.
+ * Override the GA ID with `NEXT_PUBLIC_GA_ID` in `.env.local` or GitHub Actions secrets.
  */
 
-const GA_MEASUREMENT_ID = typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_GA_ID : null;
 const CLARITY_PROJECT_ID = typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_CLARITY_ID : null;
 
 // Safe check to determine if GA is hydrated in the browser
@@ -25,31 +23,11 @@ const getGtag = () => {
 export const initializeAnalytics = (): void => {
   if (typeof window === 'undefined') return;
 
-  // PLACEHOLDER: GA4 Script Injection
   if (GA_MEASUREMENT_ID) {
-    const gaScript = document.createElement('script');
-    gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    gaScript.async = true;
-    document.head.appendChild(gaScript);
-
-    const initScript = document.createElement('script');
-    initScript.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${GA_MEASUREMENT_ID}');
-    `;
-    document.head.appendChild(initScript);
-    console.log(`[Analytics] GA4 Initialized with ID: ${GA_MEASUREMENT_ID}`);
-  } else {
-    if (process.env.NODE_ENV === 'development') {
-      console.debug('[Analytics] GA4 disabled in development. Set NEXT_PUBLIC_GA_ID in .env.local to enable.');
-    } else {
-      console.warn('[Analytics] GA4 Measurement ID missing. Events will be logged to console.');
-    }
+    console.log(`[Analytics] GA4 active with ID: ${GA_MEASUREMENT_ID}`);
   }
 
-  // PLACEHOLDER: Microsoft Clarity Script Injection
+  // Microsoft Clarity Script Injection
   if (CLARITY_PROJECT_ID) {
     const clarityScript = document.createElement('script');
     clarityScript.type = 'text/javascript';
