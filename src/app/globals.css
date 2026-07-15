@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --surface: #f6f8fa;
+  --surface-hover: #eaeef2;
+  --border: #d0d7de;
+  --border-hover: #8c959f;
+  --text-main: #24292f;
+  --text-sec: #57606a;
+  --text-muted: #6e7781;
+  --accent: #0969da;
+  --accent-hover: #0c57c4;
+  --accent-focus: rgba(9, 105, 218, 0.15);
+  
+  --success: #1a7f37;
+  --success-bg: #dafbe1;
+  --warning: #9a6700;
+  --warning-bg: #fff8c5;
+  --error: #cf222e;
+  --error-bg: #ffebe9;
+  --info: #0969da;
+  --info-bg: #ddf4ff;
+
+  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  --background: #0d1117;
+  --surface: #161b22;
+  --surface-hover: #21262d;
+  --border: #30363d;
+  --border-hover: #8b949e;
+  --text-main: #c9d1d9;
+  --text-sec: #8b949e;
+  --text-muted: #484f58;
+  --accent: #58a6ff;
+  --accent-hover: #1f6feb;
+  --accent-focus: rgba(88, 166, 255, 0.15);
+  
+  --success: #3fb950;
+  --success-bg: rgba(46, 160, 67, 0.15);
+  --warning: #d29922;
+  --warning-bg: rgba(187, 128, 9, 0.15);
+  --error: #f85149;
+  --error-bg: rgba(248, 81, 73, 0.15);
+  --info: #58a6ff;
+  --info-bg: rgba(56, 139, 253, 0.15);
+}
+
+@theme {
+  --color-bg-base: var(--background);
+  --color-surface-base: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border-base: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-text-main: var(--text-main);
+  --color-text-sec: var(--text-sec);
+  --color-text-mute: var(--text-muted);
+  --color-accent-base: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-focus: var(--accent-focus);
+  
+  --color-success-base: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-warning-base: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-error-base: var(--error);
+  --color-error-bg: var(--error-bg);
+  --color-info-base: var(--info);
+  --color-info-bg: var(--info-bg);
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-main);
+  font-family: var(--font-inter);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base custom styles to align with developer-first Linear/Vercel/GitHub style */
+input, select, button {
+  font-family: inherit;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0001",
+    "skill": "api-documentation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": ["rest", "http", "status-codes"],
+    "question": "Which HTTP status code is most appropriate when a client sends a request that is syntactically incorrect or cannot be fulfilled?",
+    "options": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "404 Not Found"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The HTTP 400 Bad Request status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).",
+    "reference": {
+      "title": "RFC 9110 Section 15.5.1",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.1"
+    },
+    "realWorldExample": "Return a 400 Bad Request when an API consumer submits a JSON payload missing a required field or containing an invalid data type.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0002",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["openapi", "specifications"],
+    "question": "What is the primary purpose of the OpenAPI Specification (OAS)?",
+    "options": [
+      "To compile backend source code into microservices",
+      "To provide a machine-readable description format for RESTful APIs",
+      "To encrypt API payloads during transit",
+      "To perform load testing on production endpoints"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The OpenAPI Specification provides a standard, programming language-agnostic interface description for HTTP APIs, allowing humans and computers to discover and understand the capabilities of the service without access to source code.",
+    "reference": {
+      "title": "OpenAPI Specification v3.1.0",
+      "url": "https://spec.openapis.org/oas/v3.1.0"
+    },
+    "realWorldExample": "Use an OpenAPI YAML or JSON file to generate interactive documentation portals like Swagger UI or Redoc, enabling developers to test endpoints directly.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0003",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["auth", "oauth"],
+    "question": "When documenting OAuth 2.0 Client Credentials Grant flow, which actor is responsible for requesting the access token directly from the authorization server?",
+    "options": [
+      "The resource owner (user)",
+      "The client application itself (machine-to-machine)",
+      "The user agent (web browser)",
+      "The resource server (API gateway)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In a Client Credentials Grant (machine-to-machine flow), the client application itself requests the access token using its own credentials (client ID and client secret), without any user intervention or resource owner presence.",
+    "reference": {
+      "title": "RFC 6749 Section 4.4",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749#section-4.4"
+    },
+    "realWorldExample": "Document the Client Credentials Grant flow when writing API integration guides for background sync cron jobs or server-side API daemons.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0004",
+    "skill": "api-documentation",
+    "difficulty": "moderate",
+    "type": "multiple-choice",
+    "tags": ["http", "status-codes"],
+    "question": "A client successfully creates a new resource by sending a POST request. Which HTTP status code should the API documentation specify as the expected success response?",
+    "options": [
+      "200 OK",
+      "201 Created",
+      "202 Accepted",
+      "204 No Content"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A 201 Created response indicates that the server successfully created a new resource. The response often includes a Location header identifying the newly created resource.",
+    "reference": {
+      "title": "RFC 9110 Section 15.3.2 - 201 Created",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.2"
+    },
+    "realWorldExample": "When documenting a 'Create User' endpoint, specify a 201 Created response and describe the Location header if returned.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0005",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["rest", "idempotency"],
+    "question": "Which HTTP method should your documentation identify as idempotent when updating an existing resource?",
+    "options": [
+      "POST",
+      "PATCH",
+      "PUT",
+      "CONNECT"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PUT is defined as an idempotent method. Repeating the same PUT request should result in the same resource state after the first successful request.",
+    "reference": {
+      "title": "RFC 9110 Section 9.2.2 - Idempotent Methods",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#section-9.2.2"
+    },
+    "realWorldExample": "Document that sending the same PUT request multiple times updates the resource to the same final state without creating duplicates.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0006",
+    "skill": "api-documentation",
+    "difficulty": "moderate",
+    "type": "multiple-choice",
+    "tags": ["pagination", "best-practices"],
+    "question": "Why should API documentation include pagination details for collection endpoints?",
+    "options": [
+      "To reduce authentication requirements.",
+      "To help consumers efficiently retrieve large datasets.",
+      "To eliminate the need for filtering.",
+      "To guarantee faster server performance."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pagination prevents large responses from overwhelming clients and allows developers to retrieve data in manageable chunks.",
+    "reference": {
+      "title": "Microsoft REST API Guidelines - Collections",
+      "url": "https://github.com/microsoft/api-guidelines"
+    },
+    "realWorldExample": "Explain query parameters such as page, pageSize, or cursor when documenting a List Orders endpoint.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0007",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["openapi", "responses"],
+    "question": "Why should every documented API endpoint include error response examples in addition to successful responses?",
+    "options": [
+      "To increase the size of the documentation.",
+      "To help consumers understand how to handle failure scenarios.",
+      "To avoid documenting request parameters.",
+      "To reduce the need for authentication documentation."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Developers need to understand expected error conditions, response payloads, and recovery strategies to build reliable integrations.",
+    "reference": {
+      "title": "OpenAPI Specification 3.1 - Responses",
+      "url": "https://spec.openapis.org/oas/latest.html"
+    },
+    "realWorldExample": "Document 400, 401, 403, 404, and 429 responses with sample payloads and troubleshooting guidance.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0008",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["authentication", "bearer-token"],
+    "question": "When documenting an API secured with Bearer tokens, what information is most important to include?",
+    "options": [
+      "The server operating system.",
+      "How clients obtain, include, and refresh the access token.",
+      "The programming language used to build the API.",
+      "The database schema."
+    ],
+    "correctAnswer": 1,
+    "explanation": "API consumers must understand the complete authentication lifecycle, including token acquisition, usage, expiration, and renewal.",
+    "reference": {
+      "title": "RFC 6750 - Bearer Token Usage",
+      "url": "https://www.rfc-editor.org/rfc/rfc6750"
+    },
+    "realWorldExample": "Include an Authorization header example such as 'Authorization: Bearer <access_token>' and explain token expiration.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0009",
+    "skill": "api-documentation",
+    "difficulty": "moderate",
+    "type": "multiple-choice",
+    "tags": ["request-body", "examples"],
+    "question": "Why should request body examples use realistic values instead of placeholders like 'string' or 'value'?",
+    "options": [
+      "They reduce API latency.",
+      "They help developers understand the expected data format and usage.",
+      "They improve HTTP performance.",
+      "They eliminate the need for schemas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Realistic examples improve comprehension and reduce implementation errors by showing how the API is intended to be used.",
+    "reference": {
+      "title": "OpenAPI Specification 3.1 - Example Object",
+      "url": "https://spec.openapis.org/oas/latest.html"
+    },
+    "realWorldExample": "Use an email such as 'alice@example.com' instead of a generic 'string' value for email fields.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0010",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["versioning", "api-design"],
+    "question": "An API introduces breaking changes. What should the documentation recommend?",
+    "options": [
+      "Overwrite the existing documentation immediately.",
+      "Document the new version while maintaining documentation for supported previous versions.",
+      "Delete all previous examples.",
+      "Avoid mentioning the breaking changes."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Consumers need documentation for both current and supported legacy versions to migrate safely.",
+    "reference": {
+      "title": "Microsoft REST API Guidelines - Versioning",
+      "url": "https://github.com/microsoft/api-guidelines"
+    },
+    "realWorldExample": "Maintain separate documentation for v1 and v2 while providing a migration guide for breaking changes.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0011",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["rate-limiting", "http"],
+    "question": "When documenting rate limiting, which information is most valuable to API consumers?",
+    "options": [
+      "The programming language used by the API server.",
+      "Request processing time.",
+      "Rate limits, response headers, and retry guidance.",
+      "The server's CPU utilization."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Consumers need to know request limits, how to detect throttling, and when they can safely retry requests.",
+    "reference": {
+      "title": "RFC 6585 Section 4 - 429 Too Many Requests",
+      "url": "https://www.rfc-editor.org/rfc/rfc6585#section-4"
+    },
+    "realWorldExample": "Explain 429 responses, Retry-After headers, and request quotas in your API guide.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0012",
+    "skill": "api-documentation",
+    "difficulty": "moderate",
+    "type": "multiple-choice",
+    "tags": ["curl", "examples"],
+    "question": "Why is providing a complete cURL example considered a documentation best practice?",
+    "options": [
+      "It replaces the need for authentication documentation.",
+      "It gives developers a runnable example they can quickly adapt.",
+      "It guarantees the API will always succeed.",
+      "It eliminates the need for response documentation."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Executable examples reduce onboarding time by allowing developers to quickly test an endpoint with minimal modification.",
+    "reference": {
+      "title": "OpenAPI Initiative - Documentation Best Practices",
+      "url": "https://www.openapis.org/"
+    },
+    "realWorldExample": "Provide a cURL example with headers, authentication, request body, and expected response.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0013",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["http", "status-codes"],
+    "question": "Which HTTP status code should the documentation specify when a request is syntactically valid but the authenticated user is not allowed to perform the requested action?",
+    "options": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "404 Not Found"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 403 Forbidden response indicates that the server understood the request and authenticated the client, but the client does not have permission to perform the requested action.",
+    "reference": {
+      "title": "RFC 9110 Section 15.5.4 - 403 Forbidden",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.4"
+    },
+    "realWorldExample": "Document a 403 response for an endpoint that only administrators are allowed to access, even when a valid access token is supplied.",
+    "estimatedTime": 30,
+    "status": "published"
+  }
+]

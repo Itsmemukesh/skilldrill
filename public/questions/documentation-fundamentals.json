@@ -1,0 +1,314 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0001",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["readability", "active-voice"],
+    "question": "Which of the following sentences is written in the active voice?",
+    "options": [
+      "The database is updated by the server hourly.",
+      "The server updates the database hourly.",
+      "Hourly updates are performed on the database.",
+      "The database has been updated by the server."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Active voice is direct, concise, and clear because the subject performs the action ('The server updates...'). Passive voice obscures the actor and adds wordiness ('updated by...').",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Active Voice",
+      "url": "https://learn.microsoft.com/en-us/style-guide/grammar/active-voice"
+    },
+    "realWorldExample": "Instead of writing 'A confirmation email will be received by you', write 'You will receive a confirmation email'.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0002",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": ["structure", "information-mapping"],
+    "question": "According to Information Mapping principles, what is the ideal number of steps to include in a single procedural task list before splitting it into sub-tasks?",
+    "options": [
+      "Exactly 3 steps",
+      "No more than 7 plus-or-minus 2 steps (5 to 9)",
+      "Exactly 10 steps",
+      "As many steps as necessary, without limits"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cognitive psychology shows that human short-term memory can process about 7 ± 2 items at a time (Miller's Law). Procedures with more than 7-9 steps should be grouped or divided into separate sub-procedures to avoid overwhelming the user.",
+    "reference": {
+      "title": "Miller's Law - Short-term Memory Limits",
+      "url": "https://lawsofux.com/millers-law/"
+    },
+    "realWorldExample": "If your installation procedure has 15 steps, split it into 'Prerequisites' (3 steps), 'Installation' (6 steps), and 'Post-Installation Verification' (6 steps).",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0003",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": ["content-design", "accessibility"],
+    "question": "When writing alternative text (alt text) for an decorative image that contains no informative content, what is the best practice for screen reader accessibility?",
+    "options": [
+      "Omit the alt attribute entirely",
+      "Set alt=\"decorative\"",
+      "Set an empty alt attribute (alt=\"\")",
+      "Set alt=\"image of a logo\""
+    ],
+    "correctAnswer": 2,
+    "explanation": "Setting alt=\"\" (empty string) informs screen readers that the image is decorative, causing them to skip it silently. If you omit the alt attribute entirely, some screen readers will read the file name of the image, causing a poor user experience.",
+    "reference": {
+      "title": "W3C Web Accessibility Tutorials - Decorative Images",
+      "url": "https://www.w3.org/WAI/tutorials/images/decorative/"
+    },
+    "realWorldExample": "Always use alt=\"\" for icons, border flourishes, or background visuals that serve purely stylistic purposes in your docs.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-004",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["active-voice", "clarity"],
+    "question": "Which sentence uses active voice?",
+    "options": [
+      "The report was reviewed by the writer.",
+      "The writer reviewed the report.",
+      "The report has been under review.",
+      "The review of the report was completed."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Active voice clearly identifies the subject performing the action, making sentences easier to read.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Active Voice",
+      "url": "https://learn.microsoft.com/en-us/style-guide/grammar/active-voice"
+    },
+    "realWorldExample": "Write 'Select Save' instead of 'The Save button should be selected.'",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-005",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["imperative", "procedures"],
+    "question": "Which sentence is most appropriate for a procedural step?",
+    "options": [
+      "You should click the Submit button.",
+      "Click Submit.",
+      "The Submit button must be clicked.",
+      "Users are expected to click Submit."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Procedure steps should begin with a clear imperative verb.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Procedures",
+      "url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/"
+    },
+    "realWorldExample": "Use 'Open Settings.' instead of 'You should open Settings.'",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-006",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["conciseness", "plain-language"],
+    "question": "Which sentence is the most concise?",
+    "options": [
+      "At this point in time, restart the application.",
+      "Restart the application now.",
+      "It is recommended that the application be restarted.",
+      "The application should now be restarted by you."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Concise writing removes unnecessary words while preserving meaning.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Concise Communication",
+      "url": "https://learn.microsoft.com/en-us/style-guide/"
+    },
+    "realWorldExample": "Replace 'in order to' with 'to' whenever possible.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-007",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["headings", "organization"],
+    "question": "What is the primary purpose of headings in documentation?",
+    "options": [
+      "To decorate the page.",
+      "To organize content and improve navigation.",
+      "To increase the document length.",
+      "To repeat information already in the paragraph."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Headings help readers scan content and quickly locate relevant information.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Headings",
+      "url": "https://learn.microsoft.com/en-us/style-guide/scannable-content/headings"
+    },
+    "realWorldExample": "Use headings like 'Install the application' instead of generic titles like 'Information'.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-008",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["terminology", "consistency"],
+    "question": "Why is consistent terminology important in technical documentation?",
+    "options": [
+      "It makes the document longer.",
+      "It reduces confusion for readers.",
+      "It allows multiple names for the same feature.",
+      "It improves search engine rankings."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Using the same term consistently helps readers understand concepts without unnecessary ambiguity.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Terminology",
+      "url": "https://learn.microsoft.com/en-us/style-guide/word-choice/use-terminology-consistently"
+    },
+    "realWorldExample": "Don't alternate between 'workspace', 'project', and 'environment' if they refer to the same feature.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-009",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["lists", "readability"],
+    "question": "When should you use a bulleted list?",
+    "options": [
+      "When presenting unrelated items.",
+      "When writing a single sentence.",
+      "When writing a document title.",
+      "When adding footnotes."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bulleted lists improve readability by grouping related but unordered information.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Lists",
+      "url": "https://learn.microsoft.com/en-us/style-guide/scannable-content/lists"
+    },
+    "realWorldExample": "List supported browsers using bullets instead of a long paragraph.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-010",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["audience", "plain-language"],
+    "question": "What should technical documentation primarily focus on?",
+    "options": [
+      "Showing the author's expertise.",
+      "Helping the intended audience complete a task.",
+      "Using complex terminology whenever possible.",
+      "Making every paragraph as detailed as possible."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Effective documentation is audience-focused and helps users achieve their goals efficiently.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Writing for Your Audience",
+      "url": "https://learn.microsoft.com/en-us/style-guide/"
+    },
+    "realWorldExample": "Write installation instructions that a new customer can follow without prior product knowledge.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-011",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["clarity", "ambiguity"],
+    "question": "Which instruction is the clearest?",
+    "options": [
+      "Do it after that.",
+      "Complete the remaining steps.",
+      "Select Save to apply your changes.",
+      "Proceed appropriately."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Clear instructions specify the exact action the reader should perform.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Style and Tone",
+      "url": "https://learn.microsoft.com/en-us/style-guide/"
+    },
+    "realWorldExample": "Prefer 'Restart the server.' over 'Take the necessary action.'",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-012",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["procedures", "sequence"],
+    "question": "Why should procedural steps be presented in the correct order?",
+    "options": [
+      "To make the document longer.",
+      "To help users successfully complete the task.",
+      "To reduce the number of headings.",
+      "To avoid using screenshots."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Users expect procedures to follow the order in which tasks should be performed.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Procedures",
+      "url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/"
+    },
+    "realWorldExample": "Install the software before attempting to configure it.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-013",
+    "skill": "documentation-fundamentals",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": ["plain-language", "readability"],
+    "question": "Which sentence best follows plain language principles?",
+    "options": [
+      "Utilize the interface to initiate the configuration procedure.",
+      "Use the interface to start the setup.",
+      "Configuration initiation should be accomplished through utilization of the interface.",
+      "The interface facilitates procedural configuration initiation."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Plain language uses familiar words and simple sentence structures that are easy to understand.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Plain Language",
+      "url": "https://learn.microsoft.com/en-us/style-guide/"
+    },
+    "realWorldExample": "Write 'Use' instead of 'Utilize' unless there's a specific technical distinction.",
+    "estimatedTime": 30,
+    "status": "published"
+  }
+]
