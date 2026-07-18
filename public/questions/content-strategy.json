@@ -1,0 +1,814 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0001",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "information-architecture",
+      "concepts"
+    ],
+    "question": "What does 'information architecture' (IA) primarily refer to?",
+    "options": [
+      "The structural organization and labeling of content so users can find it",
+      "The visual color scheme of a website",
+      "The programming language used to build a site",
+      "The server hardware that hosts the content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Information architecture is the practice of organizing, structuring, and labeling content so that users can find information and complete tasks. It concerns structure and findability, not visual styling or code.",
+    "reference": {
+      "title": "Usability.gov - Information Architecture Basics",
+      "url": "https://www.usability.gov/what-and-why/information-architecture.html"
+    },
+    "realWorldExample": "Grouping help articles into clear categories like 'Getting Started', 'Billing', and 'Troubleshooting' is an IA decision.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0002",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "taxonomy",
+      "organization"
+    ],
+    "question": "What is a 'taxonomy' in content strategy?",
+    "options": [
+      "A tax form required to publish content",
+      "A type of animated page transition",
+      "A classification system of categories and terms used to organize content",
+      "A tool for measuring page load speed"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A taxonomy is a structured classification scheme, a controlled set of categories and terms, used to organize and label content consistently so it can be grouped, filtered, and found.",
+    "reference": {
+      "title": "Nielsen Norman Group - Taxonomy 101",
+      "url": "https://www.nngroup.com/articles/taxonomy-101/"
+    },
+    "realWorldExample": "A support site uses a taxonomy of product, topic, and audience tags so users can filter articles by any of them.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0003",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "sitemap",
+      "navigation"
+    ],
+    "question": "What is a sitemap in the context of content structure?",
+    "options": [
+      "A map showing the physical location of servers",
+      "A hierarchical outline of the pages and sections of a site",
+      "A list of the site's registered users",
+      "A diagram of the site's color palette"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A sitemap is a hierarchical representation of a site's pages and how they relate, showing the overall structure and navigation paths. It helps plan organization and guides users and search engines through the content.",
+    "reference": {
+      "title": "Nielsen Norman Group - Site Map (definition)",
+      "url": "https://www.nngroup.com/articles/site-map-navigation/"
+    },
+    "realWorldExample": "Before a docs redesign, the team sketches a sitemap showing top-level sections and their child pages.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0004",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "audience",
+      "personas"
+    ],
+    "question": "Why do content strategists create audience personas?",
+    "options": [
+      "To increase the total word count of the content",
+      "To choose the website's fonts",
+      "To assign passwords to different users",
+      "To represent target users' goals and needs so content can be tailored to them"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Personas are research-based, semi-fictional profiles of target users that capture their goals, needs, and context. They keep content decisions focused on real audience needs rather than assumptions.",
+    "reference": {
+      "title": "Nielsen Norman Group - Personas: Study Guide",
+      "url": "https://www.nngroup.com/articles/persona/"
+    },
+    "realWorldExample": "A persona for a 'first-time admin' reminds writers to explain setup steps that experienced users would skip.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0005",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "content-audit",
+      "maintenance"
+    ],
+    "question": "What is a content audit?",
+    "options": [
+      "A systematic inventory and evaluation of existing content",
+      "A financial review of publishing costs",
+      "A security scan for malware in documents",
+      "A spellcheck run across all pages"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A content audit is a systematic review that inventories existing content and assesses its quality, accuracy, and relevance. It reveals gaps, duplication, and outdated material to inform strategy.",
+    "reference": {
+      "title": "Nielsen Norman Group - Content Audits",
+      "url": "https://www.nngroup.com/articles/content-audit/"
+    },
+    "realWorldExample": "Before a migration, a team audits 400 help articles and finds 90 are outdated and can be retired.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0006",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "navigation",
+      "labeling"
+    ],
+    "question": "What makes a navigation label effective?",
+    "options": [
+      "It uses clever, ambiguous wording to intrigue users",
+      "It is as long and descriptive as possible",
+      "It uses clear, familiar words that match what users expect",
+      "It changes on every page visit"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Effective navigation labels use clear, familiar language that matches users' mental models and expectations, helping them predict where a link leads. Clever or ambiguous labels increase confusion.",
+    "reference": {
+      "title": "Nielsen Norman Group - Menu Design Best Practices",
+      "url": "https://www.nngroup.com/articles/menu-design/"
+    },
+    "realWorldExample": "A menu item labeled 'Pricing' works better than a vague label like 'Discover Value'.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0007",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "metadata",
+      "findability"
+    ],
+    "question": "How does metadata support content strategy?",
+    "options": [
+      "It encrypts the content for security",
+      "It describes content (e.g., title, tags, author) so it can be organized, filtered, and found",
+      "It automatically translates the content",
+      "It doubles the size of each page"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metadata is descriptive data about content, such as title, tags, category, and author, that powers organization, filtering, search, and reuse. Good metadata is essential to findability.",
+    "reference": {
+      "title": "Nielsen Norman Group - The Role of Metadata",
+      "url": "https://www.nngroup.com/articles/metadata/"
+    },
+    "realWorldExample": "Tagging articles with a 'product' and 'version' field lets users filter to exactly the docs for their release.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0008",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "content-lifecycle",
+      "governance"
+    ],
+    "question": "What does the 'content lifecycle' describe?",
+    "options": [
+      "The battery life of the device displaying content",
+      "The time it takes a page to load",
+      "The number of authors who can edit a page",
+      "The stages content passes through, from creation to publication, maintenance, and retirement"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The content lifecycle covers the stages content moves through, planning, creating, reviewing, publishing, maintaining, and eventually archiving or retiring, ensuring content stays accurate and relevant over time.",
+    "reference": {
+      "title": "GatherContent - The Content Lifecycle",
+      "url": "https://gathercontent.com/blog/content-lifecycle"
+    },
+    "realWorldExample": "A governance plan schedules each article for review every 12 months and retirement when its feature is deprecated.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0009",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "user-goals",
+      "task-based"
+    ],
+    "question": "What is the main advantage of organizing documentation around user tasks rather than product features?",
+    "options": [
+      "It helps users find how to accomplish their goals more easily",
+      "It makes the documentation longer",
+      "It requires fewer headings",
+      "It hides advanced features from users"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Task-based organization matches how users think, they arrive wanting to accomplish something. Structuring content around goals (for example 'Set up billing') makes it easier to find than feature-centric groupings.",
+    "reference": {
+      "title": "Nielsen Norman Group - Task Analysis",
+      "url": "https://www.nngroup.com/articles/task-analysis/"
+    },
+    "realWorldExample": "A help center section titled 'Invite your team' guides users better than one merely titled 'User Management API'.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0010",
+    "skill": "content-strategy",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "style-guide",
+      "consistency"
+    ],
+    "question": "Why is a content style guide valuable to a content strategy?",
+    "options": [
+      "It guarantees the site ranks first on search engines",
+      "It replaces the need for any editing",
+      "It ensures consistency in voice, tone, and terminology across all content",
+      "It automatically generates new content"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A content style guide documents standards for voice, tone, terminology, and formatting, so multiple contributors produce consistent content that feels like it comes from one coherent source.",
+    "reference": {
+      "title": "Content Design London - Content Style Guide",
+      "url": "https://contentdesign.london/content-design/content-style-guide"
+    },
+    "realWorldExample": "A style guide standardizes 'sign in' (not 'log in'), so every page across the product uses the same term.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0011",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "card-sorting",
+      "research"
+    ],
+    "question": "What is the primary purpose of a card sorting exercise?",
+    "options": [
+      "To measure how fast users can type",
+      "To learn how users group and label content, informing the information architecture",
+      "To choose brand colors",
+      "To test server response times"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Card sorting asks participants to group and label content items, revealing users' mental models. Those groupings inform a more intuitive information architecture and navigation structure.",
+    "reference": {
+      "title": "Nielsen Norman Group - Card Sorting: Uncover Users' Mental Models",
+      "url": "https://www.nngroup.com/articles/card-sorting-definition/"
+    },
+    "realWorldExample": "Users consistently group 'refunds' with 'billing' rather than 'orders', so the team places it under Billing in the IA.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0012",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "structured-content",
+      "content-modeling"
+    ],
+    "question": "What is a 'content model'?",
+    "options": [
+      "A 3D rendering of a web page",
+      "A fashion model featured in marketing content",
+      "A pricing plan for a CMS",
+      "A definition of content types and their component fields and relationships"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A content model defines the types of content (for example 'article', 'FAQ', 'product') and the structured fields and relationships each contains. It enables consistent, reusable, structured content rather than undifferentiated blobs.",
+    "reference": {
+      "title": "Nielsen Norman Group - Content Modeling",
+      "url": "https://www.nngroup.com/articles/content-modeling/"
+    },
+    "realWorldExample": "A 'tutorial' content type defines fields for title, prerequisites, steps, and related links, enforced across every tutorial.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0013",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "navigation",
+      "breadth-depth"
+    ],
+    "question": "In navigation design, what is the trade-off between a 'broad and shallow' versus a 'narrow and deep' hierarchy?",
+    "options": [
+      "Broad-shallow shows many options per level with fewer clicks to reach content; narrow-deep shows fewer options per level but requires more clicks",
+      "Broad-shallow always loads faster than narrow-deep",
+      "Narrow-deep is always more accessible",
+      "There is no meaningful difference between them"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Broad, shallow hierarchies present many choices at each level so users reach content in fewer clicks but face more options to scan. Narrow, deep hierarchies present fewer choices per level but require more clicks and risk users getting lost. Strategists balance these based on content volume and user needs.",
+    "reference": {
+      "title": "Nielsen Norman Group - Flat vs. Deep Website Hierarchies",
+      "url": "https://www.nngroup.com/articles/flat-vs-deep-hierarchy/"
+    },
+    "realWorldExample": "A small docs set uses a flat, broad menu, while a large enterprise product nests topics more deeply to avoid overwhelming menus.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0014",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "controlled-vocabulary",
+      "tagging"
+    ],
+    "question": "Why do content teams use a controlled vocabulary for tags instead of free-form tagging?",
+    "options": [
+      "To make tags invisible to users",
+      "To increase the number of unique tags as much as possible",
+      "To prevent inconsistent, duplicate, or synonym tags that fragment content and harm findability",
+      "To allow every author to invent their own tag names"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A controlled vocabulary restricts tagging to an approved set of terms, preventing near-duplicates and synonyms (for example 'login', 'log-in', 'sign in') that scatter related content and degrade search and filtering. It keeps the taxonomy coherent.",
+    "reference": {
+      "title": "Nielsen Norman Group - Controlled Vocabularies",
+      "url": "https://www.nngroup.com/articles/controlled-vocabularies/"
+    },
+    "realWorldExample": "Authors must pick from a fixed tag list, so 'authentication' content is never split across 'auth', 'login', and 'sign-in' tags.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0015",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "governance",
+      "ownership"
+    ],
+    "question": "What does 'content governance' establish?",
+    "options": [
+      "The exact pixel dimensions of every image",
+      "Roles, standards, and processes for how content is created, approved, maintained, and retired",
+      "The marketing budget for a quarter",
+      "The choice of web hosting provider"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Content governance defines who is responsible for content, the standards it must meet, and the workflows for creating, approving, updating, and retiring it. It keeps content consistent and accurate as teams and volume scale.",
+    "reference": {
+      "title": "Nielsen Norman Group - Content Governance",
+      "url": "https://www.nngroup.com/articles/content-governance/"
+    },
+    "realWorldExample": "A governance model names a content owner per section who must approve changes and review the section quarterly.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0016",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "seo",
+      "findability"
+    ],
+    "question": "From a content-strategy standpoint, what is the most sustainable way to improve organic findability?",
+    "options": [
+      "Stuffing pages with as many keywords as possible",
+      "Hiding keywords in white text",
+      "Buying links from unrelated sites",
+      "Creating well-structured, useful content that matches the terms and intent users actually search for"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sustainable findability comes from genuinely useful, well-structured content aligned to real user search intent and vocabulary. Manipulative tactics like keyword stuffing or hidden text violate search guidelines and harm long-term trust.",
+    "reference": {
+      "title": "Google Search Central - Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    },
+    "realWorldExample": "A team titles an article using the phrase users actually search ('reset password') rather than internal jargon ('credential recovery flow').",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0017",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "progressive-disclosure",
+      "structure"
+    ],
+    "question": "What problem does 'progressive disclosure' solve in content design?",
+    "options": [
+      "It shows core information first and defers advanced detail, reducing cognitive overload",
+      "It reveals sensitive data gradually to attackers",
+      "It slowly increases the font size as users scroll",
+      "It discloses the author's identity over time"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Progressive disclosure presents the most important, commonly needed information up front and moves advanced or secondary detail to secondary layers (expandable sections, linked pages). This reduces cognitive overload while keeping depth available.",
+    "reference": {
+      "title": "Nielsen Norman Group - Progressive Disclosure",
+      "url": "https://www.nngroup.com/articles/progressive-disclosure/"
+    },
+    "realWorldExample": "A setup guide shows the standard path first and tucks edge-case configuration behind an 'Advanced options' expander.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0018",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "metrics",
+      "measurement"
+    ],
+    "question": "Which metric most directly indicates whether help content is successfully answering user questions?",
+    "options": [
+      "The total number of pages published",
+      "The number of fonts used on the page",
+      "Task success / self-service rate (users resolving their issue without contacting support)",
+      "The file size of the page"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Task success or self-service rate, whether users can resolve their need from the content without escalating, is a direct measure of content effectiveness. Volume of pages or stylistic factors do not indicate whether content actually helps.",
+    "reference": {
+      "title": "Nielsen Norman Group - Success Rate: The Simplest Usability Metric",
+      "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/"
+    },
+    "realWorldExample": "After rewriting a troubleshooting guide, support tickets on that topic drop, signaling higher self-service success.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0019",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "content-reuse",
+      "modularity"
+    ],
+    "question": "How does modular, structured content support omnichannel publishing?",
+    "options": [
+      "It forces all content into a single fixed page layout",
+      "It separates content from presentation so the same components can be reused across web, mobile, and other channels",
+      "It prevents content from ever being reused",
+      "It requires rewriting content for each channel from scratch"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Modular, structured content stored independently of presentation can be assembled and rendered differently per channel. This 'create once, publish everywhere' approach avoids duplicating and re-authoring content for each output.",
+    "reference": {
+      "title": "Nielsen Norman Group - Structured Content and the Design Process",
+      "url": "https://www.nngroup.com/articles/structured-content/"
+    },
+    "realWorldExample": "A single structured 'product description' component renders on the website, in the mobile app, and in a PDF datasheet.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0020",
+    "skill": "content-strategy",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "accessibility",
+      "inclusive-content"
+    ],
+    "question": "Which practice best supports accessible, inclusive content structure?",
+    "options": [
+      "Using color alone to convey meaning",
+      "Writing in the longest sentences possible",
+      "Relying on images of text instead of real text",
+      "Using descriptive headings, meaningful link text, and a logical reading order"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Descriptive headings, meaningful link text, and a logical structure let assistive technologies convey content effectively and help all users scan and navigate. Conveying meaning by color alone or using images of text creates accessibility barriers.",
+    "reference": {
+      "title": "W3C - Web Content Accessibility Guidelines (WCAG) 2.2",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/"
+    },
+    "realWorldExample": "Link text reads 'Download the setup guide (PDF)' instead of 'click here', so screen-reader users know where it leads.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0021",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "migration",
+      "content-audit"
+    ],
+    "question": "During a large content migration, a team must decide what to keep. Which audit-driven approach is most defensible?",
+    "options": [
+      "Use quantitative and qualitative audit data (traffic, task success, accuracy, business value) to keep, revise, or retire each item (a ROT analysis)",
+      "Migrate everything to avoid making decisions",
+      "Keep only the newest pages regardless of usage",
+      "Delete anything longer than one screen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A defensible approach combines quantitative signals (traffic, engagement) with qualitative judgment (accuracy, relevance, business value) to classify content as Redundant, Outdated, or Trivial (ROT) and decide what to keep, improve, or retire. Migrating everything perpetuates clutter; arbitrary rules ignore actual value.",
+    "reference": {
+      "title": "Nielsen Norman Group - Content Audits",
+      "url": "https://www.nngroup.com/articles/content-audit/"
+    },
+    "realWorldExample": "Pages with near-zero traffic and outdated screenshots are retired, while high-traffic but inaccurate pages are prioritized for rewriting.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0022",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "information-scent",
+      "navigation"
+    ],
+    "question": "Users keep abandoning a deep navigation path before reaching the right page. Applying information foraging theory, what is the likely cause?",
+    "options": [
+      "The pages load with the wrong background color",
+      "There are too few advertisements on the page",
+      "Weak 'information scent', labels and links do not clearly signal that the target content lies ahead",
+      "The content uses a serif font"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Information foraging theory holds that users follow 'information scent', cues from labels and links that suggest whether a path leads to their goal. When scent is weak or misleading, users doubt the path and abandon it. Strengthening labels to clearly signal what lies ahead improves navigation success.",
+    "reference": {
+      "title": "Nielsen Norman Group - Information Scent",
+      "url": "https://www.nngroup.com/articles/information-scent/"
+    },
+    "realWorldExample": "Renaming a vague 'Resources' link to 'API Reference & Guides' gives stronger scent, and drop-off falls.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0023",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "taxonomy",
+      "faceted-classification"
+    ],
+    "question": "A large catalog needs users to filter by multiple independent dimensions (topic, product, level, format) at once. Which classification approach fits best?",
+    "options": [
+      "A single strict hierarchical tree where each item has exactly one location",
+      "A faceted classification allowing items to be described by multiple independent attributes",
+      "Free-text tagging with no structure",
+      "Alphabetical ordering only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Faceted classification describes each item with multiple independent attributes (facets), letting users combine filters like topic + product + level in any order. A single strict hierarchy forces one path and cannot express multi-dimensional filtering well.",
+    "reference": {
+      "title": "Nielsen Norman Group - Filters vs. Facets",
+      "url": "https://www.nngroup.com/articles/filters-vs-facets/"
+    },
+    "realWorldExample": "A learning library lets users filter tutorials simultaneously by product, difficulty, and format (video/article).",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0024",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "structured-content",
+      "cms",
+      "cope"
+    ],
+    "question": "What is the core principle behind a 'COPE' (Create Once, Publish Everywhere) content strategy?",
+    "options": [
+      "Store content as page-specific HTML tied to one layout",
+      "Copy and paste content manually into each channel",
+      "Publish content only on a single website",
+      "Separate content from presentation and store it as structured, reusable data delivered to many channels"
+    ],
+    "correctAnswer": 3,
+    "explanation": "COPE relies on decoupling content from presentation and storing it as structured, format-agnostic data. A single source can then be delivered (often via an API/headless CMS) to web, mobile, voice, and other channels without re-authoring, ensuring consistency and efficiency.",
+    "reference": {
+      "title": "Nielsen Norman Group - The Characteristics of Minimally Viable Structured Content",
+      "url": "https://www.nngroup.com/articles/structured-content/"
+    },
+    "realWorldExample": "A headless CMS stores product help as structured entries that feed the website, in-app help, and a chatbot from one source.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0025",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "localization",
+      "global-content"
+    ],
+    "question": "Which content-strategy practice most reduces cost and errors when content must be localized into many languages?",
+    "options": [
+      "Writing clear, culturally neutral, structured source content and externalizing translatable strings",
+      "Embedding text inside images so translators can edit them directly",
+      "Using idioms and region-specific slang for personality",
+      "Concatenating sentence fragments dynamically at runtime"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Localization scales best when source content is clear, culturally neutral, and structured, with translatable text separated from code and layout. Idioms, text baked into images, and concatenated fragments break in translation and inflate cost and error rates.",
+    "reference": {
+      "title": "W3C Internationalization - Localization vs. Internationalization",
+      "url": "https://www.w3.org/International/questions/qa-i18n"
+    },
+    "realWorldExample": "Avoiding idioms and keeping UI strings in external resource files lets the team add a new language without touching layout code.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0026",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "information-architecture",
+      "polyhierarchy"
+    ],
+    "question": "A piece of content legitimately belongs under two different categories that users approach from different paths. What IA solution addresses this without duplicating the content?",
+    "options": [
+      "Physically copy the page into both categories",
+      "Force it into just one category and hope users find it",
+      "Use polyhierarchy / cross-linking so one canonical item is reachable from multiple categories",
+      "Delete one of the categories"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Polyhierarchy lets a single canonical item appear in more than one place in the structure (via multiple classifications or cross-links) without duplicating it. Physically copying the page creates maintenance drift, while forcing one location harms findability for users who expect the other path.",
+    "reference": {
+      "title": "Nielsen Norman Group - The Difference Between Information Architecture and Navigation",
+      "url": "https://www.nngroup.com/articles/ia-vs-navigation/"
+    },
+    "realWorldExample": "A 'Refund policy' page is reachable from both 'Billing' and 'Returns' via cross-links, but there is only one source page to maintain.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0027",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "governance",
+      "scaling",
+      "workflow"
+    ],
+    "question": "As contributor count grows, documentation quality becomes inconsistent. Which governance mechanism most directly addresses this at scale?",
+    "options": [
+      "Letting anyone publish instantly with no process",
+      "Defined workflows with clear ownership, review gates, and enforced standards (templates, style guide, checklists)",
+      "Reducing the number of pages by half",
+      "Switching the site's color theme"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Consistency at scale comes from governance: assigning ownership, requiring review gates, and enforcing standards through templates, a style guide, and checklists. Removing process or unrelated changes like theming does not address the root cause of inconsistent contributions.",
+    "reference": {
+      "title": "Nielsen Norman Group - Content Governance",
+      "url": "https://www.nngroup.com/articles/content-governance/"
+    },
+    "realWorldExample": "New contributors must use a page template and pass a peer review against the style guide before publishing, restoring consistency.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0028",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "measurement",
+      "gap-analysis"
+    ],
+    "question": "A team wants to prioritize which new documentation to create next. Which data-informed method is most appropriate?",
+    "options": [
+      "Write about whatever topic the newest employee prefers",
+      "Create content in alphabetical order of features",
+      "Only document features that already have the most pages",
+      "Perform a content gap analysis using search logs, support tickets, and unmet user tasks to identify high-demand missing content"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A content gap analysis correlates demand signals, internal search queries with no good results, recurring support tickets, and unmet user tasks, to reveal high-impact missing content. This prioritizes creation by real user need rather than arbitrary ordering.",
+    "reference": {
+      "title": "Nielsen Norman Group - Content Gap Analysis",
+      "url": "https://www.nngroup.com/articles/content-gaps/"
+    },
+    "realWorldExample": "Search logs show many failed queries for 'SSO setup' with no matching article, so it becomes the next doc to write.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0029",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "single-source-of-truth",
+      "consistency"
+    ],
+    "question": "The same policy text appears on 20 pages and is often out of sync after edits. Which content-strategy approach fixes the root cause?",
+    "options": [
+      "Establish a single source of truth and reuse it via transclusion/includes so all 20 locations reference one canonical block",
+      "Ask writers to remember to update all 20 copies each time",
+      "Delete 19 of the pages",
+      "Convert the text to an image so it cannot be edited"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The sustainable fix is a single source of truth: author the policy once and reuse it through transclusion or includes so every location references the one canonical block. Relying on humans to update 20 copies guarantees drift, and the other options lose needed content or editability.",
+    "reference": {
+      "title": "Write the Docs - Reusing Content (single-sourcing)",
+      "url": "https://www.writethedocs.org/guide/writing/reusing-content/"
+    },
+    "realWorldExample": "A shared 'data-retention policy' snippet is included on all 20 pages, so one edit updates every page at once.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "CS-0030",
+    "skill": "content-strategy",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "semantic-metadata",
+      "structured-data"
+    ],
+    "question": "Why might a content strategy adopt semantic structured data (e.g., schema.org markup) beyond basic tagging?",
+    "options": [
+      "To make the HTML file smaller",
+      "To hide content from search engines",
+      "To describe content meaning in a machine-readable way that improves search features, reuse, and interoperability",
+      "To prevent the content from being indexed at all"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Semantic structured data (such as schema.org) encodes the meaning of content in a standardized, machine-readable format. This enables richer search results (for example FAQs and how-to rich results), better reuse across systems, and interoperability, going beyond what informal tags provide.",
+    "reference": {
+      "title": "Google Search Central - Intro to structured data markup",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+    },
+    "realWorldExample": "Marking up help articles as FAQ structured data lets search engines display the questions directly in results.",
+    "estimatedTime": 60,
+    "status": "published"
+  }
+]

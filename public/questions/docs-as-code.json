@@ -1,0 +1,830 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0001",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "markdown",
+      "syntax"
+    ],
+    "question": "In Markdown, which syntax creates a level-1 heading?",
+    "options": [
+      "*Heading*",
+      "== Heading ==",
+      "# Heading",
+      "[Heading]"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In Markdown, a single '#' followed by a space creates a level-1 (H1) heading. Additional '#' characters increase the heading level (## is H2, ### is H3, and so on).",
+    "reference": {
+      "title": "CommonMark Spec - ATX Headings",
+      "url": "https://spec.commonmark.org/0.31.2/#atx-headings"
+    },
+    "realWorldExample": "Start a README with '# Project Name' so it renders as the top-level title on GitHub.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0002",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "version-control"
+    ],
+    "question": "What is the primary purpose of a version control system like Git in a docs-as-code workflow?",
+    "options": [
+      "To track changes over time and allow collaboration on content",
+      "To automatically translate documentation into other languages",
+      "To render Markdown into HTML for the browser",
+      "To compress images used in documentation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Git tracks the history of changes, lets multiple authors work in parallel through branches, and enables review and rollback. This version history and collaboration model is the foundation of docs-as-code.",
+    "reference": {
+      "title": "Git - About Version Control",
+      "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+    },
+    "realWorldExample": "A team uses Git branches so a writer can draft a new guide while another updates the release notes, then merges both without overwriting each other's work.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0003",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "frontmatter",
+      "metadata"
+    ],
+    "question": "What is 'front matter' in a Markdown file used by static site generators?",
+    "options": [
+      "The introductory paragraph shown before the first heading",
+      "The navigation menu injected at build time",
+      "A footer containing copyright information",
+      "A block of metadata at the top of the file, usually in YAML"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Front matter is a metadata block placed at the very top of a content file, most commonly written in YAML and delimited by triple dashes (---). It stores values like title, date, tags, and layout that the static site generator reads when building the page.",
+    "reference": {
+      "title": "Jekyll Docs - Front Matter",
+      "url": "https://jekyllrb.com/docs/front-matter/"
+    },
+    "realWorldExample": "Adding 'title: Getting Started' and 'weight: 10' in front matter lets the generator set the page title and control its order in the sidebar.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0004",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "markdown",
+      "code-blocks"
+    ],
+    "question": "Which Markdown syntax is used to create a fenced code block?",
+    "options": [
+      "Wrapping the text in single asterisks",
+      "Wrapping the text in triple backticks",
+      "Indenting the text with a single space",
+      "Prefixing each line with a greater-than sign"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A fenced code block is created by wrapping content in triple backticks (```). You can add a language identifier after the opening fence (for example ```python) to enable syntax highlighting.",
+    "reference": {
+      "title": "CommonMark Spec - Fenced Code Blocks",
+      "url": "https://spec.commonmark.org/0.31.2/#fenced-code-blocks"
+    },
+    "realWorldExample": "Wrap a shell command in a fenced block tagged ```bash so it renders monospaced with correct highlighting.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0005",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "static-site-generators",
+      "concepts"
+    ],
+    "question": "What does a static site generator (SSG) do?",
+    "options": [
+      "It serves dynamic pages generated per request from a database",
+      "It edits documentation directly in a WYSIWYG cloud editor",
+      "It converts source files like Markdown into pre-built HTML pages at build time",
+      "It runs a live server that compiles pages only when a user visits them"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A static site generator transforms source content (commonly Markdown) plus templates into a complete set of static HTML/CSS/JS files during a build step. Because pages are pre-rendered, they can be served quickly from a CDN without a backend database.",
+    "reference": {
+      "title": "MDN Web Docs - Static site generator (Glossary)",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/SSG"
+    },
+    "realWorldExample": "MkDocs builds a docs site from Markdown into a static 'site/' folder that you can host on GitHub Pages.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0006",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "commit"
+    ],
+    "question": "In Git, what does a commit represent?",
+    "options": [
+      "A saved snapshot of changes with a message describing them",
+      "A live preview of the documentation website",
+      "A request to merge two branches together",
+      "A copy of the repository stored on a remote server"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A commit records a snapshot of the tracked files at a point in time, along with a message that explains what changed and why. Commits form the project history that Git tracks.",
+    "reference": {
+      "title": "Git Docs - Recording Changes to the Repository",
+      "url": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"
+    },
+    "realWorldExample": "After fixing a typo you run 'git commit -m \"Fix typo in install guide\"' to record that change with a clear message.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0007",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "markdown",
+      "links"
+    ],
+    "question": "Which is the correct Markdown syntax for an inline hyperlink?",
+    "options": [
+      "<Docs>(https://example.com)",
+      "{Docs}(https://example.com)",
+      "(Docs)[https://example.com]",
+      "[Docs](https://example.com)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An inline link uses square brackets for the link text immediately followed by parentheses containing the URL: [text](url). The reversed form (text)[url] is a common mistake and does not create a link.",
+    "reference": {
+      "title": "CommonMark Spec - Links",
+      "url": "https://spec.commonmark.org/0.31.2/#links"
+    },
+    "realWorldExample": "Write '[the API reference](/reference/api)' to link the phrase 'the API reference' to your API docs page.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0008",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "ci-cd",
+      "concepts"
+    ],
+    "question": "What does CI/CD stand for in a documentation pipeline?",
+    "options": [
+      "Content Indexing / Content Delivery",
+      "Continuous Integration / Continuous Delivery (or Deployment)",
+      "Compiled Input / Compiled Distribution",
+      "Central Interface / Central Dashboard"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CI/CD stands for Continuous Integration and Continuous Delivery (or Deployment). In docs-as-code it means changes are automatically built, validated, and published whenever content is committed or merged.",
+    "reference": {
+      "title": "GitLab - What is CI/CD?",
+      "url": "https://about.gitlab.com/topics/ci-cd/"
+    },
+    "realWorldExample": "When a writer merges a pull request, a CI/CD pipeline automatically rebuilds the docs site and deploys it to production.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0009",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "markdown",
+      "lists"
+    ],
+    "question": "Which characters can start an unordered list item in Markdown?",
+    "options": [
+      "Only the plus sign (+)",
+      "Only Roman numerals",
+      "A dash (-), asterisk (*), or plus sign (+)",
+      "A hash (#) followed by a space"
+    ],
+    "correctAnswer": 2,
+    "explanation": "CommonMark allows an unordered (bullet) list item to begin with a dash (-), an asterisk (*), or a plus sign (+) followed by a space. Ordered lists use numbers followed by a period or parenthesis.",
+    "reference": {
+      "title": "CommonMark Spec - List Items",
+      "url": "https://spec.commonmark.org/0.31.2/#list-items"
+    },
+    "realWorldExample": "Use '- Step one' consistently across your docs rather than mixing '-', '*', and '+' bullets.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0010",
+    "skill": "docs-as-code",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "plain-text",
+      "concepts"
+    ],
+    "question": "Why is plain text (like Markdown) preferred over binary formats (like .docx) in docs-as-code?",
+    "options": [
+      "Plain text produces meaningful, line-by-line diffs in version control",
+      "Plain text files render faster in word processors",
+      "Plain text files are always smaller than any binary file",
+      "Plain text cannot be edited by more than one person"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Plain-text formats let version control tools show precise, human-readable line-by-line diffs of what changed. Binary formats like .docx store content in a way that diffs poorly, making review and merge difficult.",
+    "reference": {
+      "title": "Write the Docs - Docs as Code",
+      "url": "https://www.writethedocs.org/guide/docs-as-code/"
+    },
+    "realWorldExample": "A reviewer can see exactly which sentence changed in a Markdown pull request, something a .docx file cannot show cleanly.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0011",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "branching",
+      "pull-requests"
+    ],
+    "question": "In a typical docs-as-code workflow, why do writers create a feature branch before editing content?",
+    "options": [
+      "Branches make Markdown render faster in the browser",
+      "Branches automatically translate the content into other languages",
+      "Branches are required to preview the site locally",
+      "Branches isolate in-progress work so it can be reviewed before merging to the main branch"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A feature (topic) branch isolates changes from the stable main branch. The work can be reviewed via a pull/merge request and only merged once approved, keeping the published content on main stable.",
+    "reference": {
+      "title": "Atlassian - Git Feature Branch Workflow",
+      "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow"
+    },
+    "realWorldExample": "A writer creates a branch named 'docs/update-oauth-guide', edits there, opens a PR, and merges to main only after a peer approves.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0012",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "linting",
+      "quality",
+      "vale"
+    ],
+    "question": "What is the main purpose of a prose linter such as Vale in a docs pipeline?",
+    "options": [
+      "To compile Markdown into a PDF",
+      "To automatically enforce style-guide and terminology rules on writing",
+      "To resolve Git merge conflicts in content files",
+      "To generate screenshots for the documentation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Vale is a syntax-aware prose linter that checks content against configurable style rules (for example banned words, passive voice, or required terminology). Running it in CI enforces editorial standards consistently and automatically.",
+    "reference": {
+      "title": "Vale - Official Documentation",
+      "url": "https://vale.sh/docs/"
+    },
+    "realWorldExample": "A Vale rule flags the word 'utilize' and suggests 'use', catching style issues in a pull request before a human reviewer sees it.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0013",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "static-site-generators",
+      "sphinx",
+      "restructuredtext"
+    ],
+    "question": "Which markup language is natively used by the Sphinx documentation generator, and remains its default?",
+    "options": [
+      "AsciiDoc",
+      "Textile",
+      "reStructuredText (reST)",
+      "BBCode"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sphinx was built around reStructuredText (reST) as its default markup, which supports rich cross-references, directives, and roles. Sphinx can also handle Markdown via the MyST parser, but reST remains its native format.",
+    "reference": {
+      "title": "Sphinx - reStructuredText Primer",
+      "url": "https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html"
+    },
+    "realWorldExample": "Python's official documentation is written in reStructuredText and built with Sphinx.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0014",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "single-sourcing",
+      "content-reuse"
+    ],
+    "question": "What does 'single-sourcing' mean in technical documentation?",
+    "options": [
+      "Writing content once and reusing it across multiple outputs or locations",
+      "Storing all documentation in a single Markdown file",
+      "Allowing only one writer to edit the documentation",
+      "Publishing documentation from a single Git branch"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Single-sourcing means authoring a piece of content once and reusing it in multiple places or output formats (web, PDF, in-product help). It reduces duplication and keeps information consistent when updates occur.",
+    "reference": {
+      "title": "Write the Docs - Reusing Content",
+      "url": "https://www.writethedocs.org/guide/writing/reusing-content/"
+    },
+    "realWorldExample": "A shared 'installation-prerequisites' snippet is included in both the Windows and macOS guides so it only needs to be updated in one place.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0015",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "merge-conflicts"
+    ],
+    "question": "When does a merge conflict occur in Git?",
+    "options": [
+      "Whenever two people edit the same repository at any time",
+      "Whenever a branch is more than one commit behind main",
+      "When a commit message is left empty",
+      "When two branches change the same lines of a file in incompatible ways"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A merge conflict happens when Git cannot automatically reconcile competing changes, typically because two branches modified the same lines of the same file differently. The conflict must be resolved manually before the merge completes.",
+    "reference": {
+      "title": "GitHub Docs - About merge conflicts",
+      "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts"
+    },
+    "realWorldExample": "Two writers both rewrite the same intro paragraph on separate branches; Git flags a conflict and one writer manually chooses the final wording.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0016",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "ci-cd",
+      "automation",
+      "link-checking"
+    ],
+    "question": "Which check is most valuable to automate in a documentation CI pipeline to prevent broken user experiences?",
+    "options": [
+      "Counting the total number of words per page",
+      "Broken link (dead URL) checking",
+      "Verifying the author's name is in each commit",
+      "Measuring how long the build server has been running"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Automated broken-link checking catches dead internal and external URLs before they reach users, a common and high-impact documentation defect. Running it in CI blocks pull requests that would introduce broken links.",
+    "reference": {
+      "title": "Write the Docs - Testing your documentation",
+      "url": "https://www.writethedocs.org/guide/tools/testing/"
+    },
+    "realWorldExample": "A CI job runs a link checker and fails the build when a merged guide points to a page that has since been deleted.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0017",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "static-site-generators",
+      "docusaurus",
+      "versioning"
+    ],
+    "question": "In Docusaurus, what does the built-in versioning feature allow you to do?",
+    "options": [
+      "Automatically translate docs into multiple languages",
+      "Track Git commit history inside the rendered page",
+      "Maintain and publish documentation for multiple product versions simultaneously",
+      "Compress the site's JavaScript bundle"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Docusaurus versioning lets you snapshot docs for each released product version so users can read the docs that match the version they use, while you continue editing the 'next' (current) docs.",
+    "reference": {
+      "title": "Docusaurus - Versioning",
+      "url": "https://docusaurus.io/docs/versioning"
+    },
+    "realWorldExample": "A project keeps docs for v1.0, v2.0, and the in-progress 'next' version so users on an older release still see accurate instructions.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0018",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "markdown",
+      "flavors",
+      "gfm"
+    ],
+    "question": "Which feature is provided by GitHub Flavored Markdown (GFM) but NOT part of the core CommonMark specification?",
+    "options": [
+      "Tables using pipe characters",
+      "ATX headings using the hash symbol",
+      "Fenced code blocks using backticks",
+      "Inline emphasis using asterisks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pipe-delimited tables are a GitHub Flavored Markdown extension, not part of core CommonMark. Headings, fenced code blocks, and emphasis are all defined in CommonMark itself.",
+    "reference": {
+      "title": "GitHub Flavored Markdown Spec - Tables (extension)",
+      "url": "https://github.github.com/gfm/#tables-extension-"
+    },
+    "realWorldExample": "A README's comparison table renders correctly on GitHub because GitHub supports GFM tables, even though a strict CommonMark renderer would show the raw pipes.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0019",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "pull-requests",
+      "review"
+    ],
+    "question": "What is the primary documentation benefit of requiring a pull request review before merging?",
+    "options": [
+      "It guarantees the documentation site never needs rebuilding",
+      "It removes the need for a style guide",
+      "It automatically publishes the content to production immediately",
+      "It provides editorial and technical review, improving quality before content is published"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A required review means another person checks accuracy, clarity, and adherence to standards before content reaches the main branch. This peer-review gate is central to maintaining documentation quality in docs-as-code.",
+    "reference": {
+      "title": "GitHub Docs - About pull request reviews",
+      "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews"
+    },
+    "realWorldExample": "An engineer reviews a writer's PR to confirm the described API parameters are accurate before it merges.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0020",
+    "skill": "docs-as-code",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "hosting",
+      "github-pages",
+      "deployment"
+    ],
+    "question": "What type of content can GitHub Pages host?",
+    "options": [
+      "Only dynamic content backed by a server-side database",
+      "Static websites built from files in a repository",
+      "Only PDF documents",
+      "Only private wikis that require login"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GitHub Pages serves static files (HTML, CSS, JS) directly from a repository or branch. It is a common, low-cost way to publish documentation built by a static site generator.",
+    "reference": {
+      "title": "GitHub Docs - About GitHub Pages",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+    },
+    "realWorldExample": "A team builds their MkDocs site in CI and deploys the generated static files to GitHub Pages on every merge to main.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0021",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "rebase",
+      "history"
+    ],
+    "question": "A writer wants to combine several small work-in-progress commits into one clean commit before opening a pull request, keeping a linear history. Which Git operation is most appropriate?",
+    "options": [
+      "git merge --no-ff",
+      "git revert",
+      "git interactive rebase (git rebase -i) with squash",
+      "git cherry-pick each commit onto main"
+    ],
+    "correctAnswer": 2,
+    "explanation": "An interactive rebase (git rebase -i) lets you squash multiple commits into one and rewrite the branch history into a clean, linear sequence before merging. Revert creates undo commits, and merge --no-ff preserves the separate commits rather than combining them.",
+    "reference": {
+      "title": "Git Docs - Rewriting History (Squashing Commits)",
+      "url": "https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History"
+    },
+    "realWorldExample": "Before review, a writer runs 'git rebase -i main' and marks their four 'wip' commits as 'squash' to present a single well-described commit.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0022",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "ci-cd",
+      "deployment",
+      "preview-builds"
+    ],
+    "question": "Why are per-pull-request preview deployments (deploy previews) especially valuable in a docs-as-code pipeline?",
+    "options": [
+      "They let reviewers see the fully rendered docs for a change before it is merged",
+      "They eliminate the need to ever build the production site",
+      "They automatically write the documentation content",
+      "They replace the need for version control entirely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Deploy previews build and host the site for each pull request, so reviewers can inspect the actual rendered output, including navigation, formatting, and links, rather than reviewing only raw Markdown. This catches rendering issues that a source diff hides.",
+    "reference": {
+      "title": "Netlify Docs - Deploy Previews",
+      "url": "https://docs.netlify.com/site-deploys/deploy-previews/"
+    },
+    "realWorldExample": "A reviewer opens the preview URL attached to a PR and notices a table renders incorrectly, something not obvious from the Markdown diff.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0023",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "single-sourcing",
+      "conditional-content",
+      "profiling"
+    ],
+    "question": "A team publishes one source of docs to both a 'Community' and an 'Enterprise' edition, hiding enterprise-only sections in the community output. Which single-sourcing technique enables this?",
+    "options": [
+      "Rebasing the enterprise branch onto community nightly",
+      "Storing each edition in a separate unrelated repository with no shared content",
+      "Using a prose linter to delete enterprise sections",
+      "Conditional content (profiling/filtering) based on attributes or flags"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Conditional content (also called profiling or filtering) tags sections with attributes and includes or excludes them per output. This lets a single source produce multiple variants without duplicating the shared content across separate copies.",
+    "reference": {
+      "title": "DITA - Conditional Processing (Profiling) with Attributes",
+      "url": "https://docs.oasis-open.org/dita/dita/v1.3/os/part2-tech-content/archSpec/base/ditaval-elements.html"
+    },
+    "realWorldExample": "Sections tagged audience=\"enterprise\" are filtered out when building the community edition but retained for the enterprise edition.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0024",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "static-site-generators",
+      "build",
+      "cross-references"
+    ],
+    "question": "Why do many docs generators (like Sphinx) validate cross-references at build time and fail the build on a broken internal reference?",
+    "options": [
+      "To make builds run faster",
+      "To catch broken internal links before publishing rather than shipping dead references to users",
+      "To force writers to use only external links",
+      "To reduce the size of the generated HTML"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Build-time validation of cross-references turns a broken internal link into a build failure, so the error is caught in CI and never reaches users. This 'fail fast' approach is a key quality advantage of treating docs like code.",
+    "reference": {
+      "title": "Sphinx - Cross-referencing arbitrary locations",
+      "url": "https://www.sphinx-doc.org/en/master/usage/referencing.html"
+    },
+    "realWorldExample": "Sphinx's nitpicky mode fails the build when a ':ref:' points to a label that no longer exists, so the writer fixes it before merging.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0025",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "large-files",
+      "binary-assets"
+    ],
+    "question": "A documentation repo is bloating because large binary assets (videos, high-res images) are stored directly in Git history. What is the recommended solution?",
+    "options": [
+      "Delete the assets and describe them in text only",
+      "Commit the assets more frequently to compress them",
+      "Use Git Large File Storage (Git LFS) to store large files outside normal Git history",
+      "Convert the whole repository to a single branch"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Git LFS replaces large binary files in the repo with lightweight text pointers and stores the actual file contents on a separate LFS store. This keeps clone size and history manageable while still versioning large assets.",
+    "reference": {
+      "title": "Git LFS - About Git Large File Storage",
+      "url": "https://git-lfs.com/"
+    },
+    "realWorldExample": "A team tracks '*.mp4' and '*.psd' with Git LFS so cloning the docs repo stays fast even though tutorial videos are versioned.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0026",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "docs-testing",
+      "code-samples",
+      "automation"
+    ],
+    "question": "What is the main benefit of automatically testing (executing) the code samples embedded in documentation?",
+    "options": [
+      "It ensures the documented code examples still work as the product changes, preventing docs drift",
+      "It shortens the documentation build time",
+      "It automatically generates the prose around the samples",
+      "It converts the samples into screenshots"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Executing code samples in CI (for example with Python's doctest or a similar harness) verifies that examples produce the documented results. This catches 'docs drift' where the product changes but the examples silently become wrong.",
+    "reference": {
+      "title": "Python Docs - doctest: Test interactive examples",
+      "url": "https://docs.python.org/3/library/doctest.html"
+    },
+    "realWorldExample": "A CI job runs doctest on the tutorial; when an API return value changes, the build fails until the documented example is updated.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0027",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "git",
+      "blame",
+      "maintenance"
+    ],
+    "question": "A writer needs to find which commit last changed a specific line in a large doc file and why. Which Git command is designed for this?",
+    "options": [
+      "git stash",
+      "git clean",
+      "git bisect",
+      "git blame"
+    ],
+    "correctAnswer": 3,
+    "explanation": "git blame annotates each line of a file with the commit, author, and date that last modified it, letting you trace the origin and rationale of a specific line. bisect finds a bug-introducing commit, stash shelves changes, and clean removes untracked files.",
+    "reference": {
+      "title": "Git Docs - git blame",
+      "url": "https://git-scm.com/docs/git-blame"
+    },
+    "realWorldExample": "Running 'git blame install.md' reveals a warning line was added in a commit referencing a specific bug, explaining why it exists.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0028",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "ci-cd",
+      "quality-gates",
+      "branch-protection"
+    ],
+    "question": "To guarantee that no documentation change reaches the main branch without passing the linter and link checker, what should a team configure?",
+    "options": [
+      "A daily reminder email to run the checks manually",
+      "Branch protection rules requiring status checks to pass before merging",
+      "A larger CI server",
+      "A rule that only one writer may commit per day"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Branch protection rules can require specific status checks (such as the linter and link checker) to pass before a pull request can be merged into the protected branch. This enforces quality gates automatically rather than relying on human discipline.",
+    "reference": {
+      "title": "GitHub Docs - About protected branches",
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches"
+    },
+    "realWorldExample": "Main is protected so a PR cannot merge until the 'vale' and 'link-check' CI jobs report success.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0029",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "markdown",
+      "extensibility",
+      "mdx"
+    ],
+    "question": "What distinguishes MDX from standard Markdown?",
+    "options": [
+      "MDX removes support for headings and lists",
+      "MDX is a binary format that cannot be diffed",
+      "MDX lets you embed and render JSX/React components directly within Markdown content",
+      "MDX can only be used for API reference pages"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MDX is an authoring format that combines Markdown with JSX, so you can import and render interactive React components inline alongside prose. This enables richer, component-driven documentation while keeping the readable Markdown base.",
+    "reference": {
+      "title": "MDX - What is MDX?",
+      "url": "https://mdxjs.com/docs/what-is-mdx/"
+    },
+    "realWorldExample": "A docs page written in MDX embeds a live '<ApiExplorer/>' React component between paragraphs of explanatory text.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "DAC-0030",
+    "skill": "docs-as-code",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "frontmatter",
+      "static-site-generators",
+      "taxonomy"
+    ],
+    "question": "In a static site generator, how does front matter most directly influence the generated site beyond storing a title?",
+    "options": [
+      "Its fields drive build behavior such as layout selection, URL/permalink, taxonomy (tags/categories), and menu placement",
+      "It is ignored by the build and shown only as raw text",
+      "It compresses images referenced on the page",
+      "It defines the CSS colors of the entire site"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Front matter fields are consumed by the generator to control how each page is built: choosing a layout/template, setting the permalink, assigning taxonomy terms like tags and categories, controlling draft status, and positioning the page in menus. It is structured metadata that shapes the output, not just a title holder.",
+    "reference": {
+      "title": "Hugo Docs - Front matter",
+      "url": "https://gohugo.io/content-management/front-matter/"
+    },
+    "realWorldExample": "Setting 'draft: true' keeps a page out of the production build, while 'categories: [\"guides\"]' places it under the Guides taxonomy automatically.",
+    "estimatedTime": 60,
+    "status": "published"
+  }
+]

@@ -5,15 +5,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["readability", "active-voice"],
+    "tags": [
+      "readability",
+      "active-voice"
+    ],
     "question": "Which of the following sentences is written in the active voice?",
     "options": [
       "The database is updated by the server hourly.",
-      "The server updates the database hourly.",
       "Hourly updates are performed on the database.",
+      "The server updates the database hourly.",
       "The database has been updated by the server."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Active voice is direct, concise, and clear because the subject performs the action ('The server updates...'). Passive voice obscures the actor and adds wordiness ('updated by...').",
     "reference": {
       "title": "Microsoft Writing Style Guide - Active Voice",
@@ -29,15 +32,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "medium",
     "type": "multiple-choice",
-    "tags": ["structure", "information-mapping"],
+    "tags": [
+      "structure",
+      "information-mapping"
+    ],
     "question": "According to Information Mapping principles, what is the ideal number of steps to include in a single procedural task list before splitting it into sub-tasks?",
     "options": [
-      "Exactly 3 steps",
       "No more than 7 plus-or-minus 2 steps (5 to 9)",
+      "Exactly 3 steps",
       "Exactly 10 steps",
       "As many steps as necessary, without limits"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Cognitive psychology shows that human short-term memory can process about 7 ± 2 items at a time (Miller's Law). Procedures with more than 7-9 steps should be grouped or divided into separate sub-procedures to avoid overwhelming the user.",
     "reference": {
       "title": "Miller's Law - Short-term Memory Limits",
@@ -53,15 +59,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["content-design", "accessibility"],
+    "tags": [
+      "content-design",
+      "accessibility"
+    ],
     "question": "When writing alternative text (alt text) for an decorative image that contains no informative content, what is the best practice for screen reader accessibility?",
     "options": [
       "Omit the alt attribute entirely",
       "Set alt=\"decorative\"",
-      "Set an empty alt attribute (alt=\"\")",
-      "Set alt=\"image of a logo\""
+      "Set alt=\"image of a logo\"",
+      "Set an empty alt attribute (alt=\"\")"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Setting alt=\"\" (empty string) informs screen readers that the image is decorative, causing them to skip it silently. If you omit the alt attribute entirely, some screen readers will read the file name of the image, causing a poor user experience.",
     "reference": {
       "title": "W3C Web Accessibility Tutorials - Decorative Images",
@@ -77,7 +86,10 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["active-voice", "clarity"],
+    "tags": [
+      "active-voice",
+      "clarity"
+    ],
     "question": "Which sentence uses active voice?",
     "options": [
       "The report was reviewed by the writer.",
@@ -101,15 +113,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["imperative", "procedures"],
+    "tags": [
+      "imperative",
+      "procedures"
+    ],
     "question": "Which sentence is most appropriate for a procedural step?",
     "options": [
       "You should click the Submit button.",
-      "Click Submit.",
       "The Submit button must be clicked.",
+      "Click Submit.",
       "Users are expected to click Submit."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Procedure steps should begin with a clear imperative verb.",
     "reference": {
       "title": "Microsoft Writing Style Guide - Procedures",
@@ -125,15 +140,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["conciseness", "plain-language"],
+    "tags": [
+      "conciseness",
+      "plain-language"
+    ],
     "question": "Which sentence is the most concise?",
     "options": [
-      "At this point in time, restart the application.",
       "Restart the application now.",
+      "At this point in time, restart the application.",
       "It is recommended that the application be restarted.",
       "The application should now be restarted by you."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Concise writing removes unnecessary words while preserving meaning.",
     "reference": {
       "title": "Microsoft Writing Style Guide - Concise Communication",
@@ -149,15 +167,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["headings", "organization"],
+    "tags": [
+      "headings",
+      "organization"
+    ],
     "question": "What is the primary purpose of headings in documentation?",
     "options": [
       "To decorate the page.",
-      "To organize content and improve navigation.",
       "To increase the document length.",
-      "To repeat information already in the paragraph."
+      "To repeat information already in the paragraph.",
+      "To organize content and improve navigation."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Headings help readers scan content and quickly locate relevant information.",
     "reference": {
       "title": "Microsoft Writing Style Guide - Headings",
@@ -173,7 +194,10 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["terminology", "consistency"],
+    "tags": [
+      "terminology",
+      "consistency"
+    ],
     "question": "Why is consistent terminology important in technical documentation?",
     "options": [
       "It makes the document longer.",
@@ -197,15 +221,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["lists", "readability"],
+    "tags": [
+      "lists",
+      "readability"
+    ],
     "question": "When should you use a bulleted list?",
     "options": [
-      "When presenting unrelated items.",
       "When writing a single sentence.",
       "When writing a document title.",
+      "When presenting unrelated items.",
       "When adding footnotes."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Bulleted lists improve readability by grouping related but unordered information.",
     "reference": {
       "title": "Microsoft Writing Style Guide - Lists",
@@ -221,15 +248,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["audience", "plain-language"],
+    "tags": [
+      "audience",
+      "plain-language"
+    ],
     "question": "What should technical documentation primarily focus on?",
     "options": [
-      "Showing the author's expertise.",
       "Helping the intended audience complete a task.",
+      "Showing the author's expertise.",
       "Using complex terminology whenever possible.",
       "Making every paragraph as detailed as possible."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Effective documentation is audience-focused and helps users achieve their goals efficiently.",
     "reference": {
       "title": "Microsoft Writing Style Guide - Writing for Your Audience",
@@ -245,15 +275,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["clarity", "ambiguity"],
+    "tags": [
+      "clarity",
+      "ambiguity"
+    ],
     "question": "Which instruction is the clearest?",
     "options": [
       "Do it after that.",
       "Complete the remaining steps.",
-      "Select Save to apply your changes.",
-      "Proceed appropriately."
+      "Proceed appropriately.",
+      "Select Save to apply your changes."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Clear instructions specify the exact action the reader should perform.",
     "reference": {
       "title": "Microsoft Writing Style Guide - Style and Tone",
@@ -269,7 +302,10 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["procedures", "sequence"],
+    "tags": [
+      "procedures",
+      "sequence"
+    ],
     "question": "Why should procedural steps be presented in the correct order?",
     "options": [
       "To make the document longer.",
@@ -293,15 +329,18 @@
     "skill": "documentation-fundamentals",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["plain-language", "readability"],
+    "tags": [
+      "plain-language",
+      "readability"
+    ],
     "question": "Which sentence best follows plain language principles?",
     "options": [
       "Utilize the interface to initiate the configuration procedure.",
-      "Use the interface to start the setup.",
       "Configuration initiation should be accomplished through utilization of the interface.",
+      "Use the interface to start the setup.",
       "The interface facilitates procedural configuration initiation."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Plain language uses familiar words and simple sentence structures that are easy to understand.",
     "reference": {
       "title": "Microsoft Writing Style Guide - Plain Language",
@@ -309,6 +348,465 @@
     },
     "realWorldExample": "Write 'Use' instead of 'Utilize' unless there's a specific technical distinction.",
     "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0014",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "minimalism",
+      "content-design"
+    ],
+    "question": "According to the principles of minimalism in technical writing, what should documentation prioritize?",
+    "options": [
+      "Supporting the user's immediate task with only the information they need",
+      "Comprehensive coverage of every possible detail",
+      "Long conceptual introductions before any action",
+      "Repeating information across many sections"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Minimalism (John Carroll's approach) focuses documentation on the user's real tasks, cutting unnecessary background so users can act quickly. It favors action-oriented, need-to-know content over exhaustive detail.",
+    "reference": {
+      "title": "Nielsen Norman Group - Minimalism in Technical Documentation",
+      "url": "https://www.nngroup.com/articles/minimalist-writing/"
+    },
+    "realWorldExample": "A quickstart shows the 4 steps to send a first API request rather than a full essay on the product's architecture.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0015",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "parallelism",
+      "lists"
+    ],
+    "question": "Why should items in a list use parallel grammatical structure?",
+    "options": [
+      "To make the list take up more space",
+      "To allow each item to use a different tense",
+      "Because lists must always be alphabetical",
+      "To improve readability and scannability by keeping items grammatically consistent"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Parallel structure means each list item follows the same grammatical pattern (for example all starting with an imperative verb). This consistency makes lists easier to scan and understand.",
+    "reference": {
+      "title": "Google - Technical Writing: Use parallel structure in lists",
+      "url": "https://developers.google.com/tech-writing/one/lists-and-tables"
+    },
+    "realWorldExample": "Write 'Install, Configure, Deploy' rather than 'Installing the app, Configuration, You deploy it'.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0016",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "tables",
+      "structure"
+    ],
+    "question": "When is a table the better choice over prose or a list?",
+    "options": [
+      "When presenting a single continuous narrative",
+      "When comparing multiple items across the same set of attributes",
+      "When writing a one-sentence instruction",
+      "When you want to hide structured relationships"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tables excel at showing multiple items measured against the same attributes, letting readers compare values row-by-row and column-by-column. Prose or lists are better for narratives or simple sequences.",
+    "reference": {
+      "title": "Google - Technical Writing: Tables",
+      "url": "https://developers.google.com/tech-writing/one/lists-and-tables"
+    },
+    "realWorldExample": "A table compares each pricing tier's price, storage, and support level side by side.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0017",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "admonitions",
+      "notes-warnings"
+    ],
+    "question": "What is the correct use of a 'Warning' admonition versus a 'Note'?",
+    "options": [
+      "They are interchangeable and mean the same thing",
+      "A Note signals danger; a Warning is just a tip",
+      "A Warning signals risk of harm or data loss; a Note provides helpful, non-critical information",
+      "Both should be used on every paragraph"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Admonition severity should match consequence: a Warning (or Caution/Danger) flags potential harm, data loss, or irreversible actions, while a Note conveys useful but non-critical information. Misusing them dilutes the reader's trust in the signals.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Notes and tips (alerts)",
+      "url": "https://learn.microsoft.com/en-us/style-guide/text-formatting/formatting-common-text-elements"
+    },
+    "realWorldExample": "Use a Warning before 'This deletes all data permanently' and a Note for 'You can also do this from the CLI.'",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0018",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "front-loading",
+      "scannability"
+    ],
+    "question": "What does 'front-loading' a sentence or paragraph mean in technical writing?",
+    "options": [
+      "Placing the most important information first",
+      "Adding a long introduction before the main point",
+      "Putting all verbs at the end",
+      "Loading images before text"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Front-loading puts the key information, the conclusion, main action, or most important word, at the beginning, where scanning readers are most likely to see it. This supports how people read on screens.",
+    "reference": {
+      "title": "Nielsen Norman Group - First 2 Words: A Signal for Scanning",
+      "url": "https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/"
+    },
+    "realWorldExample": "Start a bullet with 'Restart the server to...' rather than 'In order to apply changes, restart the server.'",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0019",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "inclusive-language",
+      "bias-free"
+    ],
+    "question": "Which practice best supports inclusive, bias-free technical writing?",
+    "options": [
+      "Using 'he' as a default pronoun for all users",
+      "Assuming all readers are experts",
+      "Using idioms specific to one culture",
+      "Using gender-neutral language and avoiding unnecessary assumptions about the reader"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Inclusive writing uses gender-neutral terms (for example 'they' or 'the user') and avoids assumptions about ability, culture, or background, so the content welcomes all readers. This is a widely adopted style-guide standard.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Bias-free communication",
+      "url": "https://learn.microsoft.com/en-us/style-guide/bias-free-communication"
+    },
+    "realWorldExample": "Write 'When users sign in, they see the dashboard' instead of defaulting to 'he sees the dashboard.'",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0020",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "tense",
+      "voice"
+    ],
+    "question": "Which tense is generally recommended for technical documentation?",
+    "options": [
+      "Future tense ('the system will display')",
+      "Present tense ('the system displays')",
+      "Past tense ('the system displayed')",
+      "A mix of all three in each sentence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Present tense is preferred because it is direct and describes what happens as the user performs an action. Future tense adds unnecessary distance ('will'), and past tense is rarely appropriate for instructions.",
+    "reference": {
+      "title": "Google - Technical Writing: Use present tense",
+      "url": "https://developers.google.com/tech-writing/one/active-voice"
+    },
+    "realWorldExample": "Write 'When you click Save, the app confirms the change' rather than 'the app will confirm the change.'",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0021",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "topic-types",
+      "structure"
+    ],
+    "question": "In topic-based authoring, how does a 'concept' topic differ from a 'task' topic?",
+    "options": [
+      "They are the same and used interchangeably",
+      "A concept lists steps; a task defines terms",
+      "A concept explains what something is and why it matters; a task gives step-by-step instructions to do something",
+      "A task is always longer than a concept"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Topic-based authoring (as in DITA) separates content by type: concept topics provide background and explain 'what/why', while task topics provide procedural 'how-to' steps. Keeping them distinct improves clarity and reuse.",
+    "reference": {
+      "title": "DITA - Information typing (concept, task, reference)",
+      "url": "https://docs.oasis-open.org/dita/dita/v1.3/os/part2-tech-content/archSpec/technicalContent/dita-technicalContent-topics.html"
+    },
+    "realWorldExample": "'How authentication works' is a concept; 'Configure OAuth' is a task with numbered steps.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0022",
+    "skill": "documentation-fundamentals",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "prerequisites",
+      "procedures"
+    ],
+    "question": "Why should a procedure list prerequisites before the numbered steps?",
+    "options": [
+      "So users can confirm they have what they need before starting, avoiding failure midway",
+      "To make the document appear longer",
+      "Because prerequisites are decorative",
+      "To hide requirements from the reader"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Stating prerequisites up front lets users verify required access, tools, or conditions before they begin, preventing them from getting stuck partway through a procedure. It is a core element of well-structured task topics.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Procedures and instructions",
+      "url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions"
+    },
+    "realWorldExample": "A deployment guide lists 'You need admin access and the CLI v2.0+' before step 1.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0023",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "readability",
+      "metrics"
+    ],
+    "question": "A reviewer says a guide for general users scores at a college reading level. What does this most likely indicate about the writing?",
+    "options": [
+      "The writing is ideal for all audiences",
+      "The document is too short",
+      "The document has too many headings",
+      "Sentences and vocabulary may be too complex for the intended audience, reducing comprehension"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Readability formulas (like Flesch-Kincaid) estimate the education level needed to understand text. A high grade level for a general audience signals overly long sentences or complex words that should be simplified for broader comprehension.",
+    "reference": {
+      "title": "Readability Guidelines - Flesch-Kincaid and reading age",
+      "url": "https://readabilityguidelines.co.uk/content-design/readability/"
+    },
+    "realWorldExample": "The writer shortens sentences and replaces jargon, lowering the reading level so more users understand it.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0024",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "headings",
+      "gerund-imperative"
+    ],
+    "question": "A style guide requires task headings to use the gerund form. Which heading follows that rule?",
+    "options": [
+      "Configure the firewall",
+      "Configuring the firewall",
+      "How to configure the firewall (a deep dive)",
+      "Firewall"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A gerund is the '-ing' form of a verb used as a noun. 'Configuring the firewall' is the gerund form. Some style guides prefer gerund headings for tasks in a table of contents, while others prefer the imperative ('Configure the firewall'); the key is applying the chosen convention consistently.",
+    "reference": {
+      "title": "Google Developer Documentation Style Guide - Headings and titles",
+      "url": "https://developers.google.com/style/headings"
+    },
+    "realWorldExample": "A docs set standardizes on gerund section titles like 'Installing', 'Configuring', and 'Deploying' for consistency.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0025",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "error-messages",
+      "content-design"
+    ],
+    "question": "What are the key elements of a well-written error message?",
+    "options": [
+      "A generic code with no explanation",
+      "Technical stack traces aimed at end users",
+      "A clear statement of what went wrong plus how the user can resolve it, in plain language",
+      "Blame directed at the user"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Effective error messages state the problem clearly and, crucially, tell the user how to fix it, using plain, non-accusatory language. Cryptic codes or raw stack traces leave users stuck and frustrated.",
+    "reference": {
+      "title": "Nielsen Norman Group - Error-Message Guidelines",
+      "url": "https://www.nngroup.com/articles/error-message-guidelines/"
+    },
+    "realWorldExample": "'We couldn't save your file because it exceeds 10 MB. Try compressing it or removing large images.' rather than 'Error 0x5F.'",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0026",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "cross-references",
+      "maintenance"
+    ],
+    "question": "Why can excessive 'click here' style cross-links harm documentation quality?",
+    "options": [
+      "They provide no context about the destination and are inaccessible to screen-reader users scanning links",
+      "They make pages load faster",
+      "They always break the build",
+      "They improve accessibility"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Link text should describe its destination. 'Click here' conveys nothing out of context and is especially problematic for screen-reader users who navigate by a list of links. Descriptive link text improves clarity and accessibility.",
+    "reference": {
+      "title": "W3C WAI - Link text and appearance (WCAG technique)",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/general/G91"
+    },
+    "realWorldExample": "Replace 'click here' with 'read the authentication guide' so the link's purpose is clear on its own.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0027",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "chunking",
+      "cognitive-load"
+    ],
+    "question": "How does 'chunking' content reduce cognitive load for readers?",
+    "options": [
+      "By combining all content into one long paragraph",
+      "By removing all headings",
+      "By using the smallest possible font",
+      "By breaking information into small, meaningful, self-contained units that are easier to process and remember"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Chunking groups related information into digestible units (short sections, focused paragraphs, meaningful lists) that match the limits of working memory. This makes content easier to scan, process, and recall.",
+    "reference": {
+      "title": "Nielsen Norman Group - Chunking",
+      "url": "https://www.nngroup.com/articles/chunking/"
+    },
+    "realWorldExample": "A long setup article is split into labeled sections, each covering one phase, so users can absorb one chunk at a time.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0028",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "terminology",
+      "glossary"
+    ],
+    "question": "A product's docs use 'tenant', 'organization', and 'account' inconsistently for the same concept. Beyond confusing readers, what is the deeper risk?",
+    "options": [
+      "There is no real risk; synonyms add variety",
+      "It fragments search and translation, and erodes user trust in the documentation's accuracy",
+      "It makes the docs shorter",
+      "It improves SEO"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Inconsistent terminology splits search results, complicates and inflates translation cost, and signals carelessness that undermines trust. Establishing one term per concept (backed by a glossary) is a foundational content-quality practice.",
+    "reference": {
+      "title": "Microsoft Writing Style Guide - Use terminology consistently",
+      "url": "https://learn.microsoft.com/en-us/style-guide/word-choice/use-terminology-consistently"
+    },
+    "realWorldExample": "The team standardizes on 'organization', updates all pages, and adds a glossary entry so search and translation stay coherent.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0029",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "numbered-vs-bulleted",
+      "lists"
+    ],
+    "question": "When should you use a numbered list instead of a bulleted list?",
+    "options": [
+      "Whenever a list has more than two items",
+      "Only when items are unrelated",
+      "When the order of items matters, such as sequential steps or ranked priority",
+      "Never; bulleted lists are always preferred"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Numbered lists imply sequence or ranking, so they are correct for ordered steps or prioritized items. Bulleted lists are for collections where order does not matter. Choosing the wrong type miscommunicates whether sequence is significant.",
+    "reference": {
+      "title": "Google - Technical Writing: Lists",
+      "url": "https://developers.google.com/tech-writing/one/lists-and-tables"
+    },
+    "realWorldExample": "Installation steps use a numbered list; a set of supported browsers uses bullets.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "FUND-0030",
+    "skill": "documentation-fundamentals",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "task-orientation",
+      "user-goals"
+    ],
+    "question": "Documentation is organized entirely around the product's internal menu structure, and users struggle to find how to accomplish goals. What is the core problem?",
+    "options": [
+      "The structure reflects the system's design instead of the user's tasks and mental model",
+      "The docs are too task-oriented",
+      "There are too few screenshots",
+      "The font is too small"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mirroring the internal UI or system architecture forces users to already know where a feature lives. Task-oriented organization, structured around what users are trying to do, matches their mental model and improves findability.",
+    "reference": {
+      "title": "Nielsen Norman Group - Match Between System and the Real World",
+      "url": "https://www.nngroup.com/articles/match-system-real-world/"
+    },
+    "realWorldExample": "The team reorganizes docs into goal-based sections like 'Send your first invoice' instead of mirroring the app's Settings tree.",
+    "estimatedTime": 60,
     "status": "published"
   }
 ]

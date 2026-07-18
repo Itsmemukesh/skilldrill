@@ -1,0 +1,812 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0001",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "portfolio",
+      "basics"
+    ],
+    "question": "What is the primary purpose of a technical writing portfolio in a job interview?",
+    "options": [
+      "To list your salary expectations",
+      "To show how many years you have worked",
+      "To replace the need for an interview conversation",
+      "To demonstrate your writing samples and how you approach documentation problems"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A portfolio shows concrete evidence of your writing ability and problem-solving approach through real samples. It lets interviewers evaluate the quality and thinking behind your work, not just your resume claims.",
+    "reference": {
+      "title": "Write the Docs - Building a Portfolio",
+      "url": "https://www.writethedocs.org/guide/writing/portfolios/"
+    },
+    "realWorldExample": "A candidate walks the interviewer through a quickstart guide sample, explaining the audience and choices they made.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0002",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "writing-test",
+      "preparation"
+    ],
+    "question": "Many technical writing interviews include a writing test. What is its main goal?",
+    "options": [
+      "To assess how you turn information into clear, well-structured documentation",
+      "To check your typing speed",
+      "To test your memory of grammar rules only",
+      "To see how fast you can finish regardless of quality"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A writing test evaluates your ability to take source material and produce clear, well-organized, audience-appropriate documentation. It reveals your process and judgment, not just speed or rote grammar recall.",
+    "reference": {
+      "title": "Write the Docs - Job Interviews and Writing Tests",
+      "url": "https://www.writethedocs.org/guide/writing/portfolios/"
+    },
+    "realWorldExample": "Given a rough feature spec, a candidate produces a concise how-to with clear steps and prerequisites.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0003",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "behavioral",
+      "star-method"
+    ],
+    "question": "In the STAR method for answering behavioral interview questions, what do the letters stand for?",
+    "options": [
+      "Start, Talk, Answer, Repeat",
+      "Summary, Task, Action, Reference",
+      "Situation, Task, Action, Result",
+      "Story, Timing, Actor, Reason"
+    ],
+    "correctAnswer": 2,
+    "explanation": "STAR stands for Situation, Task, Action, Result. It structures behavioral answers by setting context, describing your responsibility, the actions you took, and the measurable outcome.",
+    "reference": {
+      "title": "MIT Career Advising - Using the STAR Method",
+      "url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/"
+    },
+    "realWorldExample": "Asked about a tough deadline, a candidate describes the situation, their task, the actions they took, and the result they achieved.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0004",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "research",
+      "company"
+    ],
+    "question": "Why should you research a company's existing documentation before the interview?",
+    "options": [
+      "To criticize it harshly during the interview",
+      "To understand their style and be able to discuss how you could contribute",
+      "To memorize it word for word",
+      "It is unnecessary preparation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Reviewing a company's docs shows genuine interest and lets you speak concretely about their style, tools, and where you could add value. It informs thoughtful questions and answers rather than criticism.",
+    "reference": {
+      "title": "Harvard Business Review - How to Prepare for a Job Interview",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate notes the company's docs lack a getting-started path and suggests how they'd approach adding one.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0005",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "questions-to-ask",
+      "engagement"
+    ],
+    "question": "At the end of an interview, why is it valuable to ask the interviewer thoughtful questions?",
+    "options": [
+      "It fills time so the interview ends faster",
+      "It is expected to ask about vacation days first",
+      "It has no real effect on the outcome",
+      "It shows engagement and helps you evaluate whether the role fits you"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Asking thoughtful questions signals genuine interest and preparation, and gives you information to assess whether the team, tools, and expectations match what you want. Interviews are a two-way evaluation.",
+    "reference": {
+      "title": "Harvard Business Review - Questions to Ask in a Job Interview",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate asks how the docs team collaborates with engineering, learning the workflow before accepting an offer.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0006",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "samples",
+      "confidentiality"
+    ],
+    "question": "You want to share a work sample, but it contains your previous employer's confidential information. What should you do?",
+    "options": [
+      "Sanitize or recreate the sample to remove confidential details, or create a fresh sample",
+      "Share it anyway since interviews are private",
+      "Refuse to show any samples at all",
+      "Email the confidential document to the interviewer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sharing confidential material breaches trust and possibly legal agreements. The professional solution is to redact/sanitize it, recreate a generic version, or write a new sample that demonstrates the same skills without exposing proprietary data.",
+    "reference": {
+      "title": "Write the Docs - Building a Portfolio (using work samples responsibly)",
+      "url": "https://www.writethedocs.org/guide/writing/portfolios/"
+    },
+    "realWorldExample": "A candidate rewrites a proprietary API guide as a sample using a fictional API to protect their former employer.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0007",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "strengths-weaknesses",
+      "self-assessment"
+    ],
+    "question": "When asked 'What is your biggest weakness?', which response is most effective?",
+    "options": [
+      "Claim you have no weaknesses",
+      "Give a strength disguised as a weakness ('I work too hard')",
+      "Name a genuine area for growth and describe how you are actively improving it",
+      "Describe a weakness that is critical to the job"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The strongest answer is honest and shows self-awareness plus growth: name a real, non-disqualifying weakness and explain concrete steps you're taking to improve. Denials and cliché humblebrags read as evasive.",
+    "reference": {
+      "title": "Harvard Business Review - How to Answer 'What's Your Greatest Weakness?'",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate says they used to under-document assumptions and now use a review checklist to catch them.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0008",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "resume",
+      "tailoring"
+    ],
+    "question": "What is a best practice when preparing your resume for a specific technical writing role?",
+    "options": [
+      "Use one identical resume for every application",
+      "Tailor it to highlight the skills and experience most relevant to that role's requirements",
+      "List every task you have ever done regardless of relevance",
+      "Omit all tools and technologies"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tailoring your resume to emphasize the experience and tools that match the job description helps recruiters quickly see your fit. A generic, unfocused resume buries relevant qualifications.",
+    "reference": {
+      "title": "MIT Career Advising - Resumes and Cover Letters",
+      "url": "https://capd.mit.edu/resources/how-to-write-an-effective-resume/"
+    },
+    "realWorldExample": "For an API docs role, a candidate moves their OpenAPI and REST experience to the top of the resume.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0009",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "follow-up",
+      "etiquette"
+    ],
+    "question": "After an interview, what is a professional and effective follow-up action?",
+    "options": [
+      "Call the interviewer repeatedly for an immediate decision",
+      "Do nothing and wait indefinitely",
+      "Message every employee of the company",
+      "Send a concise thank-you note reiterating your interest"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A brief, timely thank-you note shows courtesy, reinforces your interest, and can reference a discussion point from the interview. Excessive contact reads as pushy, while total silence misses a chance to stay memorable.",
+    "reference": {
+      "title": "Harvard Business Review - The Right Way to Follow Up After an Interview",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate emails a short thank-you the next day, mentioning an idea they discussed about improving onboarding docs.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0010",
+    "skill": "interview-preparation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "audience-question",
+      "fundamentals"
+    ],
+    "question": "An interviewer asks, 'What is the first thing you consider before writing any documentation?' What is the strongest answer?",
+    "options": [
+      "The audience and their goals",
+      "The color scheme of the page",
+      "The word count target",
+      "Which font to use"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Understanding the audience and what they are trying to accomplish is the foundation of good documentation; it drives scope, tone, structure, and level of detail. Visual and length concerns come much later.",
+    "reference": {
+      "title": "Google - Technical Writing One: Audience",
+      "url": "https://developers.google.com/tech-writing/one/audience"
+    },
+    "realWorldExample": "Before writing, the candidate says they identify whether readers are beginners or experts to set the right depth.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0011",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "behavioral",
+      "conflict"
+    ],
+    "question": "An interviewer asks you to describe a conflict with a colleague. What should your answer emphasize?",
+    "options": [
+      "How the other person was entirely at fault",
+      "That you avoid all conflict by staying silent",
+      "The situation, your constructive actions, and the resolution or lesson learned",
+      "Unrelated complaints about past jobs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Interviewers use conflict questions to assess maturity and collaboration. A strong answer uses a STAR-style structure to show how you engaged constructively and what resolution or growth resulted, not blame or avoidance.",
+    "reference": {
+      "title": "MIT Career Advising - Behavioral Interview Questions (STAR)",
+      "url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/"
+    },
+    "realWorldExample": "A candidate describes disagreeing with an engineer over doc scope, how they used user data to align, and the improved outcome.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0012",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "portfolio",
+      "presentation"
+    ],
+    "question": "When presenting a portfolio piece, why is it valuable to explain the context and your process, not just show the final document?",
+    "options": [
+      "To make the presentation longer",
+      "Because interviewers want to understand your thinking, decisions, and how you handle constraints",
+      "Because the final document is irrelevant",
+      "To avoid discussing the actual writing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The final artifact shows the result, but explaining the audience, constraints, and choices reveals your reasoning and problem-solving, which is what interviewers most want to evaluate. Process context turns a sample into evidence of skill.",
+    "reference": {
+      "title": "Write the Docs - Portfolios (telling the story behind samples)",
+      "url": "https://www.writethedocs.org/guide/writing/portfolios/"
+    },
+    "realWorldExample": "A candidate explains that a strict length limit led them to move detail into a linked reference, showing prioritization skill.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0013",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "editing-test",
+      "scenario"
+    ],
+    "question": "During an editing exercise, you are given a poorly written paragraph. What is the best first step before editing?",
+    "options": [
+      "Immediately start changing words top to bottom",
+      "Delete the paragraph and write something unrelated",
+      "Focus only on fixing commas",
+      "Identify the intended audience and purpose so your edits serve them"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Effective editing is goal-directed: knowing the audience and purpose lets you judge what to keep, cut, or clarify. Editing word-by-word without that context risks polishing content that doesn't serve the reader.",
+    "reference": {
+      "title": "Google - Technical Writing Two: Editing",
+      "url": "https://developers.google.com/tech-writing/two"
+    },
+    "realWorldExample": "The candidate asks 'who reads this and what should they do after?' then restructures the paragraph around that action.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0014",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "whiteboard",
+      "documentation-scenario"
+    ],
+    "question": "An interviewer asks, 'How would you document a brand-new API from scratch?' Which answer best demonstrates a strong process?",
+    "options": [
+      "Identify the audience and use cases, gather details from SMEs and the spec, then structure reference and task-based guides",
+      "Start typing endpoints without any planning",
+      "Copy another product's API docs verbatim",
+      "Wait for someone else to define the structure"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A strong answer shows a methodical process: understand the audience and their goals, gather accurate detail from SMEs and the API spec, then organize both reference material and task-oriented guides. This demonstrates planning and user focus.",
+    "reference": {
+      "title": "Google - Documenting APIs (API technical writing)",
+      "url": "https://developers.google.com/tech-writing/for-engineers"
+    },
+    "realWorldExample": "The candidate outlines interviewing the API owner, mapping key user tasks, then drafting endpoint reference plus a quickstart.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0015",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "salary",
+      "negotiation"
+    ],
+    "question": "When asked about salary expectations early in the process, what is a reasonable professional approach?",
+    "options": [
+      "Refuse to ever discuss compensation",
+      "Demand double the market rate immediately",
+      "Give a researched range based on market data for the role and your experience",
+      "Say you will accept absolutely anything"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Providing a researched, market-informed range (based on role, location, and experience) shows preparation and keeps negotiation grounded. Refusing entirely, lowballing yourself, or making extreme demands all weaken your position.",
+    "reference": {
+      "title": "Harvard Business Review - How to Negotiate Your Salary",
+      "url": "https://hbr.org/2014/04/how-to-negotiate-your-salary"
+    },
+    "realWorldExample": "A candidate cites a researched range for senior technical writers in their region and ties it to their API documentation expertise.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0016",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "tools-question",
+      "adaptability"
+    ],
+    "question": "An interviewer notes their team uses a docs tool you have never used. What is the best response?",
+    "options": [
+      "Claim you are already an expert in it",
+      "Acknowledge you haven't used it, relate it to similar tools you know, and express confidence in learning it quickly",
+      "Say the tool is bad and they should switch",
+      "Refuse to consider the role because of the tool"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Honesty plus transferable-skill framing is strongest: admit the gap, connect it to comparable tools you've mastered, and show a learning mindset. Overclaiming risks exposure, and dismissiveness signals poor collaboration.",
+    "reference": {
+      "title": "Harvard Business Review - How to Talk About Skills You're Still Learning",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate says they haven't used MadCap Flare but have deep DITA/XML experience and expect a fast ramp-up.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0017",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "motivation",
+      "why-this-role"
+    ],
+    "question": "When asked 'Why do you want to work here?', which answer is strongest?",
+    "options": [
+      "Because you need any job quickly",
+      "Because the office is close to home",
+      "A generic answer that could apply to any company",
+      "A specific answer connecting the company's product, mission, or docs culture to your skills and goals"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A specific, researched answer that links what the company does to your skills and career goals demonstrates genuine interest and fit. Generic or purely convenience-based answers suggest you haven't seriously considered the role.",
+    "reference": {
+      "title": "Harvard Business Review - How to Ace Your Job Interview",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate explains they admire the company's open-source docs and want to bring their API-writing skills to that community.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0018",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "writing-sample-critique",
+      "self-review"
+    ],
+    "question": "If an interviewer asks you to critique your own past writing sample, what does a strong answer show?",
+    "options": [
+      "Self-awareness: what worked, what you'd improve now, and why",
+      "That your work is perfect and needs no changes",
+      "That you no longer remember the sample",
+      "Harsh dismissal of all your prior work"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Interviewers probe self-critique to gauge growth and reflective judgment. Identifying strengths plus specific improvements you'd now make demonstrates maturity, while claiming perfection or dismissing everything both signal weak self-assessment.",
+    "reference": {
+      "title": "MIT Career Advising - Reflecting on Your Work in Interviews",
+      "url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/"
+    },
+    "realWorldExample": "A candidate notes a guide was solid but says they'd now add a troubleshooting section based on later user questions.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0019",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "remote-interview",
+      "logistics"
+    ],
+    "question": "What preparation most improves your performance in a remote video interview specifically?",
+    "options": [
+      "Ignoring your camera and audio setup",
+      "Reading answers off-screen the whole time",
+      "Testing your camera, microphone, lighting, and connection, and minimizing background distractions beforehand",
+      "Scheduling it while commuting"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Remote interviews add technical variables: verifying camera, mic, lighting, and connectivity, and controlling your environment, prevents disruptions and lets you focus on the conversation. Neglecting setup or multitasking undermines your presentation.",
+    "reference": {
+      "title": "Harvard Business Review - How to Nail a Video Interview",
+      "url": "https://hbr.org/2020/06/how-to-nail-a-job-interview-remotely"
+    },
+    "realWorldExample": "A candidate does a test call the night before, positions a light in front of them, and silences notifications.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0020",
+    "skill": "interview-preparation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "gaps",
+      "honesty"
+    ],
+    "question": "How should you handle a question about an employment gap on your resume?",
+    "options": [
+      "Lie to hide the gap entirely",
+      "Address it honestly and briefly, focusing on what you did or learned and your readiness now",
+      "Refuse to answer the question",
+      "Become defensive and change the subject"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Honesty framed positively is best: briefly explain the gap and highlight relevant activities (learning, freelance, caregiving) and your current readiness. Lying risks discovery, and defensiveness draws more attention to it.",
+    "reference": {
+      "title": "Harvard Business Review - How to Explain an Employment Gap",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate explains they took time to complete a technical writing certification and are eager to apply it.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0021",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "timed-writing-test",
+      "strategy"
+    ],
+    "question": "You get a timed take-home writing test with an ambiguous prompt and limited information. What approach best demonstrates senior-level judgment?",
+    "options": [
+      "Guess silently and produce as much content as possible",
+      "Email the company demanding all missing details before starting",
+      "Submit only a list of questions with no writing",
+      "State your assumptions explicitly, define the audience and scope, then deliver a focused, complete sample within those bounds"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Senior judgment shows in handling ambiguity: documenting reasonable assumptions and scope up front, then producing a coherent, complete deliverable within them. This mirrors real work where specs are incomplete, unlike silent guessing or refusing to proceed.",
+    "reference": {
+      "title": "Write the Docs - Writing Tests and Take-Home Exercises",
+      "url": "https://www.writethedocs.org/guide/writing/portfolios/"
+    },
+    "realWorldExample": "The candidate opens with 'Assumptions: audience is first-time API users; scope is authentication only', then writes a tight guide.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0022",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "systems-thinking",
+      "docs-strategy"
+    ],
+    "question": "An interviewer asks how you'd improve a large, messy documentation set with limited time. Which answer shows the strongest strategic thinking?",
+    "options": [
+      "Use data (traffic, search logs, support tickets) to prioritize the highest-impact content and fix that first",
+      "Rewrite every page alphabetically",
+      "Change the site's visual theme and call it done",
+      "Delete pages at random to reduce volume"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Strategic thinking means prioritizing by impact under constraints: letting analytics, search logs, and support data reveal where fixes help users most, and starting there. Arbitrary or cosmetic approaches ignore where value actually lies.",
+    "reference": {
+      "title": "Nielsen Norman Group - Prioritizing Content Improvements with Data",
+      "url": "https://www.nngroup.com/articles/content-audit/"
+    },
+    "realWorldExample": "The candidate says they'd fix the top 10 most-visited but lowest-rated pages before touching rarely used ones.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0023",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "behavioral",
+      "failure-question"
+    ],
+    "question": "When asked 'Tell me about a time you failed', what makes the most compelling senior-level answer?",
+    "options": [
+      "Claiming you have never failed",
+      "A trivial 'failure' that had no consequences",
+      "A real failure told with ownership, the impact, and the concrete lessons and changes you made afterward",
+      "Blaming the failure entirely on others"
+    ],
+    "correctAnswer": 2,
+    "explanation": "This question tests accountability and growth. A genuine failure, owned honestly, with its impact and the specific improvements you adopted, demonstrates resilience and learning. Denials, trivial examples, or blame-shifting all undercut credibility.",
+    "reference": {
+      "title": "Harvard Business Review - How to Answer 'Tell Me About a Time You Failed'",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate describes shipping docs with an unverified step that caused support tickets, and how they added a testing step to their process.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0024",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "stakeholder-scenario",
+      "influence"
+    ],
+    "question": "An interview scenario: engineering resists writing or reviewing docs. How would a strong candidate say they'd earn engineering buy-in?",
+    "options": [
+      "Report the engineers to management immediately",
+      "Reduce their effort and show value: integrate docs into their existing workflow (e.g., PRs), and demonstrate how good docs cut their support load",
+      "Write everything alone and never involve them",
+      "Insist docs are more important than engineering work"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Earning buy-in works by lowering friction and demonstrating mutual benefit: fitting docs into engineers' existing tools and workflows and showing how quality docs reduce repetitive questions and support burden. Coercion or isolation damages the partnership docs depend on.",
+    "reference": {
+      "title": "Write the Docs - Docs as Code and Working with Engineers",
+      "url": "https://www.writethedocs.org/guide/docs-as-code/"
+    },
+    "realWorldExample": "The candidate describes adding lightweight doc review to the PR process so engineers contribute without leaving their tools.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0025",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "metrics-question",
+      "impact"
+    ],
+    "question": "An interviewer asks how you measure documentation success. Which answer is most sophisticated?",
+    "options": [
+      "By the number of pages published",
+      "By how long each document is",
+      "By how many tools were used to make it",
+      "By outcome metrics tied to user and business goals, such as task success, self-service rate, and reduced support contacts, combined with qualitative feedback"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A sophisticated answer ties success to outcomes, whether users accomplish tasks, resolve issues without support, and report satisfaction, blending quantitative metrics with qualitative feedback. Output counts like page volume or length measure effort, not effectiveness.",
+    "reference": {
+      "title": "Nielsen Norman Group - Success Rate: The Simplest Usability Metric",
+      "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/"
+    },
+    "realWorldExample": "The candidate cites tracking support-ticket deflection and task-completion rates before and after a docs revamp.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0026",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "culture-fit",
+      "reverse-interview"
+    ],
+    "question": "To evaluate whether a documentation team is healthy before accepting an offer, which question is most revealing to ask?",
+    "options": [
+      "How is documentation prioritized, resourced, and integrated into the product development process?",
+      "What color are the office walls?",
+      "How many snacks are in the kitchen?",
+      "Do you allow personal phone calls?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Asking how docs are prioritized, staffed, and integrated into development reveals whether the organization treats documentation as essential or an afterthought, a strong predictor of your success and satisfaction. Superficial perks say little about the working reality.",
+    "reference": {
+      "title": "Write the Docs - Evaluating Documentation Culture",
+      "url": "https://www.writethedocs.org/guide/"
+    },
+    "realWorldExample": "The candidate learns docs are part of the definition of done, signaling a healthy, docs-valuing culture.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0027",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "live-editing",
+      "audience-adaptation"
+    ],
+    "question": "In a live exercise, you must simplify a dense, jargon-heavy passage for a beginner audience while keeping it technically accurate. What is the key balance to demonstrate?",
+    "options": [
+      "Remove all technical terms even if it loses accuracy",
+      "Keep all jargon so it stays precise",
+      "Preserve technical accuracy while introducing or defining necessary terms and improving structure for the reader's level",
+      "Shorten it drastically regardless of missing information"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The skill being tested is balancing accessibility with accuracy: keep the content correct while defining essential terms, cutting needless jargon, and restructuring for the beginner. Sacrificing accuracy or leaving impenetrable jargon both fail the audience.",
+    "reference": {
+      "title": "Google - Technical Writing One: Words (define new terms)",
+      "url": "https://developers.google.com/tech-writing/one/words"
+    },
+    "realWorldExample": "The candidate keeps the correct term 'idempotent' but adds a one-line plain-language definition on first use.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0028",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "prioritization-scenario",
+      "trade-offs"
+    ],
+    "question": "Asked how you'd handle documenting three features shipping the same week with only time for two, what response shows the best judgment?",
+    "options": [
+      "Document whichever feature is most fun to write about",
+      "Assess user impact, risk, and support burden to prioritize, communicate the trade-off, and provide minimal stopgap coverage for the third",
+      "Refuse to document any until you can do all three fully",
+      "Document all three superficially and hope for the best"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Strong judgment prioritizes by user impact and risk, transparently communicates what will and won't be ready, and provides at least minimal coverage (release note or known-issue) for the deferred item. Refusing everything or spreading effort too thin serves users worse.",
+    "reference": {
+      "title": "Project Management Institute - Prioritization and Trade-offs",
+      "url": "https://www.pmi.org/learning/library/top-five-causes-scope-creep-6675"
+    },
+    "realWorldExample": "The candidate fully documents the two high-risk features and ships a short release note for the low-risk third, flagging fuller docs next sprint.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0029",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "ai-question",
+      "modern-skills"
+    ],
+    "question": "An interviewer asks how you use AI tools responsibly in documentation. Which answer demonstrates the most mature perspective?",
+    "options": [
+      "You let AI publish content directly to save time",
+      "You refuse to use AI under any circumstances",
+      "You trust AI output because it is always correct",
+      "You use AI to accelerate drafting and rephrasing but always verify accuracy, protect confidential data, and apply human editorial judgment"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A mature answer treats AI as an accelerator under human control: useful for drafts and rewrites, but paired with fact-verification, data-privacy care, and editorial judgment. Blind trust or auto-publishing ignores hallucination and confidentiality risks, while blanket refusal ignores real productivity gains.",
+    "reference": {
+      "title": "Write the Docs - Using AI tools in documentation",
+      "url": "https://www.writethedocs.org/guide/tools/ai/"
+    },
+    "realWorldExample": "The candidate explains they draft with AI, then verify every technical claim against the spec and never paste unreleased data into public tools.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "INT-0030",
+    "skill": "interview-preparation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "closing",
+      "differentiation"
+    ],
+    "question": "When asked 'Why should we hire you over other candidates?', what is the most effective strategy?",
+    "options": [
+      "Connect your distinctive, evidence-backed strengths directly to the role's specific needs and challenges",
+      "Criticize the other candidates you imagine",
+      "Say you are simply the best without specifics",
+      "Restate your entire resume verbatim"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The strongest close links your specific, demonstrable strengths to the exact challenges of this role, showing fit backed by evidence from your experience. Vague superlatives, resume repetition, or disparaging unseen candidates all fail to differentiate you meaningfully.",
+    "reference": {
+      "title": "Harvard Business Review - How to Ace Your Job Interview",
+      "url": "https://hbr.org/2022/02/how-to-ace-your-job-interview"
+    },
+    "realWorldExample": "A candidate ties their proven track record of cutting support tickets through better API docs to the team's current support-load problem.",
+    "estimatedTime": 60,
+    "status": "published"
+  }
+]

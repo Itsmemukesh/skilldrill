@@ -5,6 +5,11 @@ import { SkillCategory } from '../types';
 const READY_SKILLS: SkillCategory[] = [
   'documentation-fundamentals',
   'api-documentation',
+  'docs-as-code',
+  'ai-for-technical-writers',
+  'content-strategy',
+  'professional-skills',
+  'interview-preparation',
 ];
 
 export default function Page() {

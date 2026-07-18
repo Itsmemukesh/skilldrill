@@ -33,6 +33,11 @@ import { useQuizNavigation } from '../../contexts/QuizNavigationContext';
 const SKILLS = [
   { id: 'documentation-fundamentals', name: 'Documentation Fundamentals', desc: 'Active voice, sentence structure, clear steps, and readability principles.' },
   { id: 'api-documentation', name: 'API Documentation', desc: 'REST APIs, OpenAPI specification, authentication, schemas, and endpoint references.' },
+  { id: 'docs-as-code', name: 'Docs-as-Code', desc: 'Markdown, static site generators, Git workflows, CI/CD pipelines, and frontmatter.' },
+  { id: 'ai-for-technical-writers', name: 'AI for Technical Writers', desc: 'Prompt engineering, AI review guidelines, large language models, and content curation.' },
+  { id: 'content-strategy', name: 'Content Strategy', desc: 'Information mapping, taxonomy, document architecture, navigation flows, and sitemaps.' },
+  { id: 'professional-skills', name: 'Professional Skills', desc: 'Editing methods, stakeholder interviews, feedback collection, and review processes.' },
+  { id: 'interview-preparation', name: 'Interview Preparation', desc: 'Common technical writing interview questions, portfolio reviews, and writing tests.' },
 ];
 
 function PracticeContent() {

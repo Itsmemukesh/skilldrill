@@ -38,31 +38,31 @@ const SKILLS: SkillItem[] = [
     id: 'docs-as-code',
     name: 'Docs-as-Code',
     desc: 'Markdown, static site generators, Git workflows, CI/CD pipelines, and frontmatter.',
-    ready: false
+    ready: true
   },
   {
     id: 'ai-for-technical-writers',
     name: 'AI for Technical Writers',
     desc: 'Prompt engineering, AI review guidelines, large language models, and content curation.',
-    ready: false
+    ready: true
   },
   {
     id: 'content-strategy',
     name: 'Content Strategy',
     desc: 'Information mapping, taxonomy, document architecture, navigation flows, and sitemaps.',
-    ready: false
+    ready: true
   },
   {
     id: 'professional-skills',
     name: 'Professional Skills',
     desc: 'Editing methods, stakeholder interviews, feedback collection, and review processes.',
-    ready: false
+    ready: true
   },
   {
     id: 'interview-preparation',
     name: 'Interview Preparation',
     desc: 'Common technical writing interview questions, portfolio reviews, and writing tests.',
-    ready: false
+    ready: true
   }
 ];
 

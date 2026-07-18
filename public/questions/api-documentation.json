@@ -5,15 +5,19 @@
     "skill": "api-documentation",
     "difficulty": "medium",
     "type": "multiple-choice",
-    "tags": ["rest", "http", "status-codes"],
+    "tags": [
+      "rest",
+      "http",
+      "status-codes"
+    ],
     "question": "Which HTTP status code is most appropriate when a client sends a request that is syntactically incorrect or cannot be fulfilled?",
     "options": [
-      "400 Bad Request",
       "401 Unauthorized",
       "403 Forbidden",
-      "404 Not Found"
+      "404 Not Found",
+      "400 Bad Request"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "The HTTP 400 Bad Request status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).",
     "reference": {
       "title": "RFC 9110 Section 15.5.1",
@@ -29,7 +33,10 @@
     "skill": "api-documentation",
     "difficulty": "easy",
     "type": "multiple-choice",
-    "tags": ["openapi", "specifications"],
+    "tags": [
+      "openapi",
+      "specifications"
+    ],
     "question": "What is the primary purpose of the OpenAPI Specification (OAS)?",
     "options": [
       "To compile backend source code into microservices",
@@ -53,15 +60,18 @@
     "skill": "api-documentation",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["auth", "oauth"],
+    "tags": [
+      "auth",
+      "oauth"
+    ],
     "question": "When documenting OAuth 2.0 Client Credentials Grant flow, which actor is responsible for requesting the access token directly from the authorization server?",
     "options": [
-      "The resource owner (user)",
       "The client application itself (machine-to-machine)",
+      "The resource owner (user)",
       "The user agent (web browser)",
       "The resource server (API gateway)"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "In a Client Credentials Grant (machine-to-machine flow), the client application itself requests the access token using its own credentials (client ID and client secret), without any user intervention or resource owner presence.",
     "reference": {
       "title": "RFC 6749 Section 4.4",
@@ -75,17 +85,20 @@
     "schemaVersion": "1.0",
     "id": "API-0004",
     "skill": "api-documentation",
-    "difficulty": "moderate",
+    "difficulty": "medium",
     "type": "multiple-choice",
-    "tags": ["http", "status-codes"],
+    "tags": [
+      "http",
+      "status-codes"
+    ],
     "question": "A client successfully creates a new resource by sending a POST request. Which HTTP status code should the API documentation specify as the expected success response?",
     "options": [
       "200 OK",
-      "201 Created",
       "202 Accepted",
+      "201 Created",
       "204 No Content"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "A 201 Created response indicates that the server successfully created a new resource. The response often includes a Location header identifying the newly created resource.",
     "reference": {
       "title": "RFC 9110 Section 15.3.2 - 201 Created",
@@ -101,15 +114,18 @@
     "skill": "api-documentation",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["rest", "idempotency"],
+    "tags": [
+      "rest",
+      "idempotency"
+    ],
     "question": "Which HTTP method should your documentation identify as idempotent when updating an existing resource?",
     "options": [
       "POST",
       "PATCH",
-      "PUT",
-      "CONNECT"
+      "CONNECT",
+      "PUT"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "PUT is defined as an idempotent method. Repeating the same PUT request should result in the same resource state after the first successful request.",
     "reference": {
       "title": "RFC 9110 Section 9.2.2 - Idempotent Methods",
@@ -123,9 +139,12 @@
     "schemaVersion": "1.0",
     "id": "API-0006",
     "skill": "api-documentation",
-    "difficulty": "moderate",
+    "difficulty": "medium",
     "type": "multiple-choice",
-    "tags": ["pagination", "best-practices"],
+    "tags": [
+      "pagination",
+      "best-practices"
+    ],
     "question": "Why should API documentation include pagination details for collection endpoints?",
     "options": [
       "To reduce authentication requirements.",
@@ -149,15 +168,18 @@
     "skill": "api-documentation",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["openapi", "responses"],
+    "tags": [
+      "openapi",
+      "responses"
+    ],
     "question": "Why should every documented API endpoint include error response examples in addition to successful responses?",
     "options": [
-      "To increase the size of the documentation.",
       "To help consumers understand how to handle failure scenarios.",
+      "To increase the size of the documentation.",
       "To avoid documenting request parameters.",
       "To reduce the need for authentication documentation."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Developers need to understand expected error conditions, response payloads, and recovery strategies to build reliable integrations.",
     "reference": {
       "title": "OpenAPI Specification 3.1 - Responses",
@@ -173,15 +195,18 @@
     "skill": "api-documentation",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["authentication", "bearer-token"],
+    "tags": [
+      "authentication",
+      "bearer-token"
+    ],
     "question": "When documenting an API secured with Bearer tokens, what information is most important to include?",
     "options": [
       "The server operating system.",
-      "How clients obtain, include, and refresh the access token.",
       "The programming language used to build the API.",
+      "How clients obtain, include, and refresh the access token.",
       "The database schema."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "API consumers must understand the complete authentication lifecycle, including token acquisition, usage, expiration, and renewal.",
     "reference": {
       "title": "RFC 6750 - Bearer Token Usage",
@@ -195,17 +220,20 @@
     "schemaVersion": "1.0",
     "id": "API-0009",
     "skill": "api-documentation",
-    "difficulty": "moderate",
+    "difficulty": "medium",
     "type": "multiple-choice",
-    "tags": ["request-body", "examples"],
+    "tags": [
+      "request-body",
+      "examples"
+    ],
     "question": "Why should request body examples use realistic values instead of placeholders like 'string' or 'value'?",
     "options": [
       "They reduce API latency.",
-      "They help developers understand the expected data format and usage.",
       "They improve HTTP performance.",
-      "They eliminate the need for schemas."
+      "They eliminate the need for schemas.",
+      "They help developers understand the expected data format and usage."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Realistic examples improve comprehension and reduce implementation errors by showing how the API is intended to be used.",
     "reference": {
       "title": "OpenAPI Specification 3.1 - Example Object",
@@ -221,7 +249,10 @@
     "skill": "api-documentation",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["versioning", "api-design"],
+    "tags": [
+      "versioning",
+      "api-design"
+    ],
     "question": "An API introduces breaking changes. What should the documentation recommend?",
     "options": [
       "Overwrite the existing documentation immediately.",
@@ -245,15 +276,18 @@
     "skill": "api-documentation",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["rate-limiting", "http"],
+    "tags": [
+      "rate-limiting",
+      "http"
+    ],
     "question": "When documenting rate limiting, which information is most valuable to API consumers?",
     "options": [
+      "Rate limits, response headers, and retry guidance.",
       "The programming language used by the API server.",
       "Request processing time.",
-      "Rate limits, response headers, and retry guidance.",
       "The server's CPU utilization."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Consumers need to know request limits, how to detect throttling, and when they can safely retry requests.",
     "reference": {
       "title": "RFC 6585 Section 4 - 429 Too Many Requests",
@@ -267,17 +301,20 @@
     "schemaVersion": "1.0",
     "id": "API-0012",
     "skill": "api-documentation",
-    "difficulty": "moderate",
+    "difficulty": "medium",
     "type": "multiple-choice",
-    "tags": ["curl", "examples"],
+    "tags": [
+      "curl",
+      "examples"
+    ],
     "question": "Why is providing a complete cURL example considered a documentation best practice?",
     "options": [
       "It replaces the need for authentication documentation.",
-      "It gives developers a runnable example they can quickly adapt.",
       "It guarantees the API will always succeed.",
+      "It gives developers a runnable example they can quickly adapt.",
       "It eliminates the need for response documentation."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Executable examples reduce onboarding time by allowing developers to quickly test an endpoint with minimal modification.",
     "reference": {
       "title": "OpenAPI Initiative - Documentation Best Practices",
@@ -293,15 +330,18 @@
     "skill": "api-documentation",
     "difficulty": "hard",
     "type": "multiple-choice",
-    "tags": ["http", "status-codes"],
+    "tags": [
+      "http",
+      "status-codes"
+    ],
     "question": "Which HTTP status code should the documentation specify when a request is syntactically valid but the authenticated user is not allowed to perform the requested action?",
     "options": [
       "400 Bad Request",
       "401 Unauthorized",
-      "403 Forbidden",
-      "404 Not Found"
+      "404 Not Found",
+      "403 Forbidden"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "A 403 Forbidden response indicates that the server understood the request and authenticated the client, but the client does not have permission to perform the requested action.",
     "reference": {
       "title": "RFC 9110 Section 15.5.4 - 403 Forbidden",
@@ -309,6 +349,465 @@
     },
     "realWorldExample": "Document a 403 response for an endpoint that only administrators are allowed to access, even when a valid access token is supplied.",
     "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0014",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "rest",
+      "http-methods"
+    ],
+    "question": "In a REST API, which HTTP method is conventionally used to retrieve a resource without modifying it?",
+    "options": [
+      "DELETE",
+      "GET",
+      "POST",
+      "PUT"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GET is used to retrieve (read) a resource and should be safe and not change server state. POST creates, PUT replaces/updates, and DELETE removes resources.",
+    "reference": {
+      "title": "MDN - HTTP request methods: GET",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"
+    },
+    "realWorldExample": "GET /users/42 returns the details of user 42 without changing anything.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0015",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "rest",
+      "http-methods"
+    ],
+    "question": "Which HTTP method is typically used to create a new resource on the server?",
+    "options": [
+      "POST",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "POST is conventionally used to create a new resource, often returning 201 Created. GET retrieves, HEAD returns headers only, and OPTIONS describes allowed methods.",
+    "reference": {
+      "title": "MDN - HTTP request methods: POST",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"
+    },
+    "realWorldExample": "POST /orders with a JSON body creates a new order and returns its generated ID.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0016",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "data-formats",
+      "json"
+    ],
+    "question": "What does JSON stand for?",
+    "options": [
+      "Java Standard Object Naming",
+      "Joined Serial Output Nodes",
+      "JavaScript Object Notation",
+      "Just Simple Object Names"
+    ],
+    "correctAnswer": 2,
+    "explanation": "JSON stands for JavaScript Object Notation, a lightweight, human-readable data-interchange format widely used for API request and response bodies.",
+    "reference": {
+      "title": "MDN - Working with JSON",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON"
+    },
+    "realWorldExample": "An API returns {\"id\": 42, \"name\": \"Ada\"} as a JSON response body.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0017",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "status-codes",
+      "http"
+    ],
+    "question": "What does the HTTP status code 200 indicate?",
+    "options": [
+      "The request was redirected",
+      "The server encountered an error",
+      "The resource was not found",
+      "The request succeeded"
+    ],
+    "correctAnswer": 3,
+    "explanation": "200 OK indicates the request succeeded. The 4xx range indicates client errors (like 404 Not Found) and the 5xx range indicates server errors.",
+    "reference": {
+      "title": "MDN - HTTP response status codes: 200 OK",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200"
+    },
+    "realWorldExample": "A successful GET /products request returns 200 with the product list in the body.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0018",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "status-codes",
+      "http"
+    ],
+    "question": "Which HTTP status code means the requested resource was not found?",
+    "options": [
+      "200",
+      "404",
+      "301",
+      "500"
+    ],
+    "correctAnswer": 1,
+    "explanation": "404 Not Found means the server could not find the requested resource. It is a client-error (4xx) code, distinct from 500 server errors.",
+    "reference": {
+      "title": "MDN - HTTP response status codes: 404 Not Found",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    },
+    "realWorldExample": "Requesting GET /users/99999 for a nonexistent user returns 404.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0019",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "endpoints",
+      "concepts"
+    ],
+    "question": "In API documentation, what is an 'endpoint'?",
+    "options": [
+      "A specific URL where an API resource or operation can be accessed",
+      "The last line of the API's source code",
+      "The physical server location",
+      "The date an API is retired"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An endpoint is a specific URL (path) through which a client interacts with an API resource or operation, such as /v1/users. Documentation describes each endpoint's method, parameters, and responses.",
+    "reference": {
+      "title": "Postman - What is an API endpoint?",
+      "url": "https://www.postman.com/api-platform/api-endpoints/"
+    },
+    "realWorldExample": "The endpoint POST /v1/payments accepts a payment request and returns a confirmation.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0020",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "openapi",
+      "specification"
+    ],
+    "question": "What is the OpenAPI Specification primarily used for?",
+    "options": [
+      "Styling the visual theme of a website",
+      "Encrypting API traffic",
+      "Describing the structure of a REST API in a standard, machine-readable format",
+      "Hosting the API server"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The OpenAPI Specification (OAS) defines a standard, language-agnostic, machine-readable description of a REST API, its endpoints, parameters, schemas, and responses, which tools use to generate docs, clients, and tests.",
+    "reference": {
+      "title": "OpenAPI Initiative - About the OpenAPI Specification",
+      "url": "https://www.openapis.org/what-is-openapi"
+    },
+    "realWorldExample": "A team writes an openapi.yaml file and generates interactive reference docs from it automatically.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0021",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "authentication",
+      "api-keys"
+    ],
+    "question": "What is a common purpose of an API key?",
+    "options": [
+      "To style the JSON response",
+      "To speed up the network connection",
+      "To store the API's documentation",
+      "To identify and authenticate the calling application or user"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An API key is a token that identifies and authenticates the client making requests, allowing the provider to control access and track usage. It should be kept secret and sent securely.",
+    "reference": {
+      "title": "Google Cloud - Why and when to use API keys",
+      "url": "https://cloud.google.com/endpoints/docs/openapi/when-why-api-key"
+    },
+    "realWorldExample": "A client sends its API key in a header so the server can verify and rate-limit the caller.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0022",
+    "skill": "api-documentation",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "request-response",
+      "concepts"
+    ],
+    "question": "In a typical REST API interaction, what is a 'payload'?",
+    "options": [
+      "The API's pricing plan",
+      "The body data sent in a request or returned in a response",
+      "The name of the server",
+      "The API's version number"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The payload is the actual data carried in the body of a request or response, for example the JSON object you send when creating a resource or receive when reading one. Headers and status lines are separate from the payload.",
+    "reference": {
+      "title": "MDN - HTTP messages (body)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages"
+    },
+    "realWorldExample": "The POST request's payload is {\"name\": \"Ada\", \"role\": \"admin\"} in the request body.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0023",
+    "skill": "api-documentation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "idempotency",
+      "http-methods"
+    ],
+    "question": "Which statement about idempotency in REST APIs is correct?",
+    "options": [
+      "PUT and DELETE are expected to be idempotent: repeating the same request has the same effect as making it once",
+      "POST is always idempotent",
+      "GET changes the resource each time it is called",
+      "Idempotency means a request can never be repeated"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An idempotent method produces the same server state whether called once or many times. PUT and DELETE are expected to be idempotent, and GET is safe/idempotent, whereas POST typically is not (repeating it may create duplicates). Documenting this helps clients handle retries safely.",
+    "reference": {
+      "title": "MDN - Idempotent (HTTP glossary)",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/Idempotent"
+    },
+    "realWorldExample": "Docs note that calling DELETE /users/42 twice still results in user 42 being gone, so a retry after a timeout is safe.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0024",
+    "skill": "api-documentation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "pagination",
+      "design"
+    ],
+    "question": "Why do API references document pagination for endpoints that return large collections?",
+    "options": [
+      "To make responses larger",
+      "To hide most of the data permanently",
+      "To let clients retrieve results in manageable pages instead of one huge response, improving performance and reliability",
+      "Because pagination is required by JSON"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pagination breaks large result sets into pages (via parameters like limit/offset or cursors), preventing oversized responses and timeouts. Documentation must explain the parameters and how to fetch subsequent pages.",
+    "reference": {
+      "title": "Microsoft REST API Guidelines - Collection pagination",
+      "url": "https://github.com/microsoft/api-guidelines/blob/vNext/azure/Guidelines.md#pagination"
+    },
+    "realWorldExample": "GET /orders?limit=50&cursor=abc returns 50 orders plus a cursor to fetch the next page.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0025",
+    "skill": "api-documentation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "path-vs-query",
+      "parameters"
+    ],
+    "question": "What is the difference between a path parameter and a query parameter?",
+    "options": [
+      "They are identical and interchangeable",
+      "Query parameters can only be numbers",
+      "Path parameters must always be optional",
+      "Path parameters identify a specific resource within the URL path; query parameters (after '?') filter, sort, or modify the request"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A path parameter is part of the URL path and typically identifies a specific resource (for example /users/{id}). Query parameters follow the '?' and refine the request, such as filtering or sorting (for example ?status=active). Documenting both clearly prevents client errors.",
+    "reference": {
+      "title": "Swagger - Describing Parameters (path vs query)",
+      "url": "https://swagger.io/docs/specification/describing-parameters/"
+    },
+    "realWorldExample": "GET /users/42?fields=name,email uses a path parameter (42) and a query parameter (fields).",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0026",
+    "skill": "api-documentation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "versioning",
+      "compatibility"
+    ],
+    "question": "Why is API versioning important to document clearly?",
+    "options": [
+      "It makes URLs longer for no reason",
+      "It lets providers introduce changes without breaking existing clients, and tells developers which version they are using",
+      "It encrypts the API responses",
+      "It is only relevant to the API's marketing team"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Versioning (for example /v1/, /v2/) allows breaking changes to be introduced in a new version while existing integrations keep working on the old one. Clear documentation of versions and deprecation timelines lets developers plan upgrades.",
+    "reference": {
+      "title": "Postman - API versioning best practices",
+      "url": "https://www.postman.com/api-platform/api-versioning/"
+    },
+    "realWorldExample": "Docs explain that /v1 is deprecated and will sunset in 12 months, guiding clients to migrate to /v2.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0027",
+    "skill": "api-documentation",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "error-documentation",
+      "developer-experience"
+    ],
+    "question": "What information most improves the usefulness of an API's error documentation?",
+    "options": [
+      "The status code plus a machine-readable error code, a human-readable message, and guidance on how to resolve it",
+      "Only the numeric status code",
+      "A generic 'something went wrong' note",
+      "The internal server stack trace"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Great error documentation pairs the HTTP status with a stable error code, a clear message, and remediation guidance, so developers can programmatically handle errors and know how to fix them. Bare codes or vague messages leave integrators guessing.",
+    "reference": {
+      "title": "Google Cloud - API Design Guide: Errors",
+      "url": "https://cloud.google.com/apis/design/errors"
+    },
+    "realWorldExample": "Docs show 429 with error code 'rate_limit_exceeded', a message, and advice to retry after the Retry-After interval.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0028",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "authentication",
+      "oauth"
+    ],
+    "question": "In the OAuth 2.0 authorization code flow, what does the client exchange for an access token?",
+    "options": [
+      "The user's raw password",
+      "The API's public documentation URL",
+      "A short-lived authorization code obtained after the user grants consent",
+      "The server's TLS certificate"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the authorization code flow, after the user authenticates and consents, the client receives a short-lived authorization code, which it then exchanges (along with its credentials) at the token endpoint for an access token. The user's password is never shared with the client.",
+    "reference": {
+      "title": "OAuth 2.0 - Authorization Code Grant (RFC 6749, Section 4.1)",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749#section-4.1"
+    },
+    "realWorldExample": "API docs walk developers through redirecting to the auth server, receiving a code, and exchanging it at /oauth/token for an access token.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0029",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "rate-limiting",
+      "headers"
+    ],
+    "question": "An API returns 429 Too Many Requests. Which documented mechanism best helps a client behave correctly?",
+    "options": [
+      "Advising clients to retry immediately in a tight loop",
+      "Telling clients to switch to a different API",
+      "Hiding the limit so clients cannot plan for it",
+      "Documenting rate-limit headers and the Retry-After value so clients can back off and retry appropriately"
+    ],
+    "correctAnswer": 3,
+    "explanation": "429 signals the client exceeded a rate limit. Documenting the rate-limit headers (remaining quota, reset time) and honoring Retry-After lets clients implement proper backoff and retry, rather than hammering the server. Immediate tight-loop retries worsen the overload.",
+    "reference": {
+      "title": "MDN - HTTP 429 Too Many Requests and Retry-After",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+    },
+    "realWorldExample": "Docs specify that on 429 the client should wait the seconds given in Retry-After before retrying, using exponential backoff.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "API-0030",
+    "skill": "api-documentation",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "rest-vs-graphql",
+      "architecture"
+    ],
+    "question": "Which statement accurately contrasts documenting a GraphQL API with a REST API?",
+    "options": [
+      "GraphQL has no schema, so it cannot be documented",
+      "GraphQL exposes a single endpoint with a typed schema clients query flexibly, whereas REST exposes multiple resource endpoints, changing how you document operations",
+      "REST and GraphQL are documented identically in every respect",
+      "GraphQL requires a separate URL for every field"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GraphQL typically uses one endpoint and a strongly typed schema that clients query for exactly the fields they need, so documentation centers on the schema, types, queries, and mutations. REST spreads operations across many endpoints documented by method and path. Understanding this shapes how each is documented.",
+    "reference": {
+      "title": "GraphQL - Introduction to GraphQL (schema and types)",
+      "url": "https://graphql.org/learn/"
+    },
+    "realWorldExample": "GraphQL docs describe the schema's types and available queries/mutations, while REST docs list endpoints like GET /users and POST /users.",
+    "estimatedTime": 60,
     "status": "published"
   }
 ]

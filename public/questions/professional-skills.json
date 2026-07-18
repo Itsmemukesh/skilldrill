@@ -1,0 +1,812 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0001",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "editing",
+      "proofreading"
+    ],
+    "question": "What is the main difference between editing and proofreading?",
+    "options": [
+      "They are identical activities with different names",
+      "Proofreading rewrites entire sections, while editing only fixes spelling",
+      "Editing improves content and structure, while proofreading catches surface errors like typos",
+      "Editing is done by software and proofreading by humans"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Editing addresses higher-level concerns such as clarity, structure, flow, and accuracy, while proofreading is the final surface-level pass for typos, grammar, and formatting errors. They are distinct stages, with proofreading typically last.",
+    "reference": {
+      "title": "Purdue OWL - Steps for Revising and Editing",
+      "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/index.html"
+    },
+    "realWorldExample": "A writer edits a guide for logical flow, then proofreads it for typos just before publishing.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0002",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "feedback",
+      "collaboration"
+    ],
+    "question": "When receiving critical feedback on your documentation, what is the most professional first response?",
+    "options": [
+      "Defend every choice immediately",
+      "Ignore the feedback if you disagree",
+      "Rewrite everything without discussion",
+      "Listen and seek to understand the feedback before responding"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Professionally handling feedback starts with listening and understanding the reviewer's intent before reacting. This keeps the focus on improving the work rather than defending ego, and lets you evaluate the feedback thoughtfully.",
+    "reference": {
+      "title": "MIT Career Advising - Giving and Receiving Feedback",
+      "url": "https://capd.mit.edu/resources/giving-and-receiving-feedback/"
+    },
+    "realWorldExample": "A writer thanks a reviewer, asks clarifying questions, and then decides which suggestions to apply.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0003",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "interviews",
+      "sme"
+    ],
+    "question": "What is a subject-matter expert (SME) in a documentation context?",
+    "options": [
+      "A person with deep knowledge of the topic being documented",
+      "A software tool that generates documentation",
+      "A professional editor hired to proofread",
+      "The manager who approves the publishing budget"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A subject-matter expert is someone with specialized, in-depth knowledge of the product or topic, such as an engineer or product manager. Writers interview SMEs to gather accurate technical detail.",
+    "reference": {
+      "title": "Write the Docs - Working with Subject Matter Experts",
+      "url": "https://www.writethedocs.org/guide/writing/docs-principles/"
+    },
+    "realWorldExample": "A writer interviews the lead engineer (the SME) to understand how a new API authentication flow works.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0004",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "communication",
+      "clarity"
+    ],
+    "question": "When emailing a busy SME to request information, what makes your message most effective?",
+    "options": [
+      "Writing a long, detailed history of the project first",
+      "Being specific about what you need and why, with clear questions",
+      "Sending many separate short messages in a row",
+      "Leaving the request vague so they can decide what to send"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Busy experts respond best to concise, specific requests that state exactly what you need and why. Clear, focused questions reduce back-and-forth and respect their time.",
+    "reference": {
+      "title": "Harvard Business Review - How to Write Email with Military Precision",
+      "url": "https://hbr.org/2016/11/how-to-write-email-with-military-precision"
+    },
+    "realWorldExample": "Instead of 'Can you tell me about the feature?', you ask '3 specific questions about the rate-limit values for the /orders endpoint.'",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0005",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "time-management",
+      "prioritization"
+    ],
+    "question": "You have more documentation tasks than time. What is a sound first step?",
+    "options": [
+      "Work on whichever task is easiest",
+      "Do all tasks at once in parallel",
+      "Prioritize tasks by impact and deadline",
+      "Wait until a manager assigns an order"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When overloaded, prioritizing by impact and deadline ensures the most important, time-sensitive work is done first. Reacting by ease or trying to do everything at once wastes effort on low-value items.",
+    "reference": {
+      "title": "Eisenhower Matrix - Prioritization Method (MindTools)",
+      "url": "https://www.mindtools.com/al1e0k5/eisenhowers-urgentimportant-principle"
+    },
+    "realWorldExample": "A writer tackles the release-blocking API docs before polishing an internal style note that has no deadline.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0006",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "peer-review",
+      "process"
+    ],
+    "question": "What is the primary goal of a peer review of documentation?",
+    "options": [
+      "To criticize the author personally",
+      "To slow down the publishing process",
+      "To assign blame for mistakes",
+      "To improve the quality and accuracy of the content before it ships"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Peer review exists to catch errors and improve clarity, accuracy, and completeness before content reaches users. Its focus is the work product, not the person.",
+    "reference": {
+      "title": "Google - Technical Writing Two: Editing",
+      "url": "https://developers.google.com/tech-writing/two"
+    },
+    "realWorldExample": "A colleague reviews a draft and flags a missing prerequisite step, preventing user confusion after launch.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0007",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "feedback",
+      "giving-feedback"
+    ],
+    "question": "When giving feedback on a colleague's draft, which approach is most constructive?",
+    "options": [
+      "Focus on the writing with specific, actionable suggestions",
+      "Point out only what is wrong, without explanation",
+      "Comment on the author's abilities in general",
+      "Rewrite it entirely in your own style without comment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Constructive feedback targets the work (not the person) and offers specific, actionable suggestions the author can act on. Vague criticism or silent rewrites do not help the author learn or improve.",
+    "reference": {
+      "title": "MIT Career Advising - Giving and Receiving Feedback",
+      "url": "https://capd.mit.edu/resources/giving-and-receiving-feedback/"
+    },
+    "realWorldExample": "Instead of 'this is confusing', you write 'Consider splitting step 3 into two steps; the login and setup actions are separate.'",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0008",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "collaboration",
+      "cross-functional"
+    ],
+    "question": "Why is collaboration with engineering and product teams important for a technical writer?",
+    "options": [
+      "It lets the writer avoid doing any research",
+      "It ensures documentation is accurate, timely, and aligned with the product",
+      "It transfers all writing work to those teams",
+      "It is only needed after documentation is published"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Close collaboration with engineering and product keeps documentation accurate and in sync with what actually ships and when. Writers rely on these partners for technical truth and timing.",
+    "reference": {
+      "title": "Write the Docs - Docs as a Team Effort",
+      "url": "https://www.writethedocs.org/guide/"
+    },
+    "realWorldExample": "By joining sprint planning, a writer learns about an API change early and updates the docs before release.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0009",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "accountability",
+      "professionalism"
+    ],
+    "question": "You published documentation that contained an error a user reported. What is the most professional response?",
+    "options": [
+      "Blame the SME who gave you the information",
+      "Delete the user's comment and ignore it",
+      "Acknowledge it, correct it promptly, and note how to prevent recurrence",
+      "Argue that the user misread the content"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Professional accountability means owning the mistake, fixing it quickly, and improving the process to prevent similar errors, rather than deflecting blame or dismissing the user.",
+    "reference": {
+      "title": "Atlassian - Blameless Postmortems",
+      "url": "https://www.atlassian.com/incident-management/postmortem/blameless"
+    },
+    "realWorldExample": "A writer corrects the wrong endpoint URL, thanks the user, and adds a review step to catch such errors earlier.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0010",
+    "skill": "professional-skills",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "tags": [
+      "meetings",
+      "note-taking"
+    ],
+    "question": "During an SME interview, why should you take structured notes or record (with permission)?",
+    "options": [
+      "To avoid listening during the meeting",
+      "To make the meeting last longer",
+      "Because notes replace the need to write documentation",
+      "To capture accurate details you can reference later without repeatedly interrupting the SME"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Capturing accurate notes (or a recording with consent) preserves technical details so you can write later without misremembering or repeatedly re-interviewing the SME, respecting their limited time.",
+    "reference": {
+      "title": "Nielsen Norman Group - Note-Taking in User Research",
+      "url": "https://www.nngroup.com/articles/note-taking-user-research/"
+    },
+    "realWorldExample": "A writer records an approved walkthrough so they can accurately transcribe the exact command sequence afterward.",
+    "estimatedTime": 30,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0011",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "interviews",
+      "questioning"
+    ],
+    "question": "When interviewing an SME, why are open-ended questions often more useful than yes/no questions?",
+    "options": [
+      "They encourage the SME to explain context and detail you might not know to ask about",
+      "They make the interview shorter",
+      "They guarantee a one-word answer",
+      "They avoid the need to prepare"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Open-ended questions ('How does the sync process handle failures?') prompt the SME to share reasoning and context, surfacing information you didn't know to ask about. Yes/no questions limit answers and can miss important nuance.",
+    "reference": {
+      "title": "Nielsen Norman Group - Open-Ended vs. Closed Questions in User Research",
+      "url": "https://www.nngroup.com/articles/open-ended-questions/"
+    },
+    "realWorldExample": "Asking 'Walk me through what happens when a payment fails' reveals edge cases a yes/no question would hide.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0012",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "editing",
+      "levels-of-edit"
+    ],
+    "question": "A 'developmental edit' focuses on which aspect of a document?",
+    "options": [
+      "Comma placement and spelling",
+      "Overall structure, organization, and whether content meets the audience's needs",
+      "Font and color choices",
+      "File naming conventions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A developmental (substantive) edit addresses the big picture: structure, organization, completeness, and fitness for the audience and purpose. Line-level concerns like spelling belong to later copyediting and proofreading stages.",
+    "reference": {
+      "title": "Editors Canada - Definitions of Editorial Skills (levels of editing)",
+      "url": "https://www.editors.ca/hire/definitions-editorial-skills"
+    },
+    "realWorldExample": "A developmental edit recommends reordering a guide to put prerequisites first, before any wording is polished.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0013",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "stakeholders",
+      "conflicting-feedback"
+    ],
+    "question": "Two reviewers give you contradictory feedback on the same paragraph. What is the best professional approach?",
+    "options": [
+      "Apply whichever feedback came in last",
+      "Ignore both to avoid conflict",
+      "Evaluate both against user needs and the style guide, then decide, communicating the rationale",
+      "Ask the reviewers to fight it out without you"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When feedback conflicts, weigh each suggestion against objective criteria, user needs and the documented style guide, then make and explain a reasoned decision. This keeps the resolution principled rather than arbitrary or political.",
+    "reference": {
+      "title": "Nielsen Norman Group - Prioritizing and Reconciling Stakeholder Input",
+      "url": "https://www.nngroup.com/articles/stakeholder-analysis/"
+    },
+    "realWorldExample": "The writer chooses the version that matches the style guide's active-voice rule and explains that basis to both reviewers.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0014",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "project-management",
+      "estimation"
+    ],
+    "question": "A stakeholder asks how long a documentation set will take. Why is it risky to give an off-the-cuff estimate?",
+    "options": [
+      "Estimates are never useful",
+      "Stakeholders never remember estimates",
+      "Estimating is the SME's job, not the writer's",
+      "Without scoping the work, the estimate is likely inaccurate and can set unrealistic expectations"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An unscoped, snap estimate often misjudges effort and can lock you into an unrealistic commitment. Breaking the work into tasks and dependencies first yields a defensible estimate and manages expectations.",
+    "reference": {
+      "title": "Atlassian - Agile Estimation",
+      "url": "https://www.atlassian.com/agile/project-management/estimation"
+    },
+    "realWorldExample": "The writer replies 'Let me scope the topics and dependencies and get you an estimate this afternoon' instead of guessing '2 days'.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0015",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "communication",
+      "audience-adaptation"
+    ],
+    "question": "When explaining a documentation decision to a non-technical stakeholder, what should you adjust?",
+    "options": [
+      "Frame it in terms of user impact and business outcomes, minimizing jargon",
+      "Use as much technical jargon as possible to sound authoritative",
+      "Refuse to explain because they won't understand",
+      "Send them the raw technical spec instead"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Effective communication adapts to the audience. For non-technical stakeholders, framing decisions around user impact and business value, with minimal jargon, makes the rationale clear and persuasive.",
+    "reference": {
+      "title": "Harvard Business Review - How to Communicate Clearly with Stakeholders",
+      "url": "https://hbr.org/2016/06/how-to-present-to-senior-executives"
+    },
+    "realWorldExample": "Instead of citing 'DITA reuse', the writer explains 'this approach cuts update time in half and reduces errors.'",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0016",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "review-process",
+      "async"
+    ],
+    "question": "Why is asynchronous, written review (e.g., pull request comments) often valuable for documentation teams?",
+    "options": [
+      "It removes the need for any standards",
+      "It creates a documented, reviewable trail and lets contributors participate across time zones",
+      "It guarantees faster approval than any meeting",
+      "It prevents anyone from disagreeing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Asynchronous written review produces a durable record of decisions and lets distributed contributors weigh in on their own schedule. It complements synchronous discussion rather than replacing standards or disagreement.",
+    "reference": {
+      "title": "GitHub Docs - About pull request reviews",
+      "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews"
+    },
+    "realWorldExample": "A reviewer in another time zone leaves inline comments overnight, and the author addresses them the next morning.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0017",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "continuous-learning",
+      "growth"
+    ],
+    "question": "Why is continuous learning especially important in technical writing?",
+    "options": [
+      "Because writing rules never change",
+      "Because employers require a new degree each year",
+      "Because tools, technologies, and products evolve, and writers must stay current to document them accurately",
+      "Because it eliminates the need to talk to SMEs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Technical writers document fast-changing tools and products, so keeping skills and domain knowledge current is essential to producing accurate, relevant documentation. It supplements, not replaces, working with SMEs.",
+    "reference": {
+      "title": "Society for Technical Communication - Professional Development",
+      "url": "https://www.stc.org/"
+    },
+    "realWorldExample": "A writer learns the basics of a new API framework so they can document it credibly and ask SMEs better questions.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0018",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "conflict-resolution",
+      "influence"
+    ],
+    "question": "An engineer insists documentation is unnecessary for a feature you believe users will struggle with. What is the most effective approach?",
+    "options": [
+      "Escalate to their manager immediately without discussion",
+      "Document it secretly and ignore the engineer",
+      "Drop the documentation to avoid conflict",
+      "Present evidence of user need (support data, usability findings) to make the case collaboratively"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Influencing without authority works best through evidence and collaboration, showing support tickets, usability data, or user questions that demonstrate the need. This is more durable than escalation, avoidance, or going behind a colleague's back.",
+    "reference": {
+      "title": "Harvard Business Review - How to Influence People Without Authority",
+      "url": "https://hbr.org/2018/07/influence-and-persuasion"
+    },
+    "realWorldExample": "The writer shares 12 recent support tickets about the feature, and the engineer agrees docs are warranted.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0019",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "portfolio",
+      "career"
+    ],
+    "question": "What makes a technical writing portfolio most compelling to employers?",
+    "options": [
+      "A few strong, relevant samples that show clarity, structure, and problem-solving",
+      "The largest possible number of samples regardless of quality",
+      "Only confidential internal documents",
+      "Samples in a single format with no context"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A strong portfolio favors quality and relevance over volume: a curated set of samples that demonstrate clear writing, sound structure, and the ability to solve documentation problems, ideally with brief context on the goal and your role.",
+    "reference": {
+      "title": "Write the Docs - Building a Portfolio",
+      "url": "https://www.writethedocs.org/guide/writing/portfolios/"
+    },
+    "realWorldExample": "A candidate shows three samples, each with a note on the audience, the challenge, and how their structure solved it.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0020",
+    "skill": "professional-skills",
+    "difficulty": "medium",
+    "type": "multiple-choice",
+    "tags": [
+      "ethics",
+      "accuracy"
+    ],
+    "question": "An SME pressures you to document a feature as 'fully secure' when you know limitations exist. What is the ethical course?",
+    "options": [
+      "Write 'fully secure' to keep the SME happy",
+      "Document accurately, describing the actual capabilities and limitations, and discuss concerns with the SME",
+      "Refuse to document anything at all",
+      "Publish without review to avoid the conversation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Technical writers have a responsibility to accuracy and to users. Documenting real capabilities and limitations, and raising the concern with the SME or stakeholders, upholds integrity rather than publishing misleading claims.",
+    "reference": {
+      "title": "Society for Technical Communication - Ethical Principles",
+      "url": "https://www.stc.org/about-stc/ethical-principles/"
+    },
+    "realWorldExample": "The writer documents the security features accurately and notes the known limitation, prompting a fix before launch.",
+    "estimatedTime": 45,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0021",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "stakeholder-management",
+      "scope"
+    ],
+    "question": "Midway through a project, a stakeholder repeatedly adds new documentation requirements without extending the deadline. What is the most professional way to manage this scope creep?",
+    "options": [
+      "Silently absorb the extra work and miss the deadline",
+      "Refuse all new requests outright",
+      "Make the trade-offs explicit: document the added scope and its impact on timeline or other work, and ask the stakeholder to prioritize",
+      "Lower the quality of everything to fit it all in"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Scope creep is best handled by transparently surfacing the trade-off: new requirements consume capacity, so the timeline, other deliverables, or scope must adjust. Presenting options and asking the stakeholder to prioritize keeps decisions informed and protects quality.",
+    "reference": {
+      "title": "Project Management Institute - Managing Scope Creep",
+      "url": "https://www.pmi.org/learning/library/top-five-causes-scope-creep-6675"
+    },
+    "realWorldExample": "The writer says 'I can add the new admin guide, but the API reference would then slip a week, which should take priority?'",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0022",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "metrics",
+      "advocating-value"
+    ],
+    "question": "You need to justify continued investment in documentation to leadership. Which evidence is most persuasive?",
+    "options": [
+      "The number of words written last quarter",
+      "The variety of fonts used across the docs",
+      "How many hours the team spent editing",
+      "Business-linked outcomes such as reduced support tickets, faster onboarding, or higher self-service success"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Leadership responds to outcomes tied to business value, fewer support contacts, faster user onboarding, higher self-service resolution, rather than activity metrics like word or hour counts, which measure effort, not impact.",
+    "reference": {
+      "title": "Nielsen Norman Group - Measuring the Value of UX and Content",
+      "url": "https://www.nngroup.com/articles/roi-of-ux/"
+    },
+    "realWorldExample": "The writer shows that a rewritten onboarding guide cut related support tickets by 30%, justifying more headcount.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0023",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "interviews",
+      "unresponsive-sme"
+    ],
+    "question": "A critical SME is chronically unresponsive, threatening a release-blocking doc. Which approach is most effective and professional?",
+    "options": [
+      "Reduce friction and escalate constructively: send a focused, time-boxed request, propose a short meeting, and if still blocked, raise the risk to the project lead with specifics",
+      "Guess the technical details and publish",
+      "Publicly criticize the SME in a team channel",
+      "Abandon the documentation entirely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The professional path minimizes the SME's effort (specific, time-boxed asks; offer a brief call) and, if still blocked, escalates the delivery risk factually to the project lead. Guessing risks inaccuracy, and public criticism damages relationships without solving the problem.",
+    "reference": {
+      "title": "Harvard Business Review - Managing Up and Escalating Effectively",
+      "url": "https://hbr.org/2015/01/what-everyone-should-know-about-managing-up"
+    },
+    "realWorldExample": "After two focused requests go unanswered, the writer tells the project lead 'the release doc is blocked pending 3 answers from X; can we help unblock?'",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0024",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "editing",
+      "voice-preservation"
+    ],
+    "question": "When copyediting another writer's work, what is a key professional principle regarding their voice?",
+    "options": [
+      "Rewrite everything to match your personal style",
+      "Correct errors and improve clarity while preserving the author's voice and intent where possible",
+      "Change only the punctuation and nothing else",
+      "Leave the text untouched to avoid offense"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A skilled copyeditor fixes errors and improves clarity and consistency while respecting the author's voice and intent, changing only what genuinely improves the work. Imposing personal style or, conversely, avoiding needed edits both fail the author and the reader.",
+    "reference": {
+      "title": "Editors Canada - Professional Editorial Standards",
+      "url": "https://www.editors.ca/publications/professional-editorial-standards"
+    },
+    "realWorldExample": "The editor tightens wording and fixes inconsistencies but keeps the author's approachable, second-person tone intact.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0025",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "process-improvement",
+      "retrospective"
+    ],
+    "question": "After a rushed release produced several doc errors, what is the most valuable team practice to prevent recurrence?",
+    "options": [
+      "Identify the individual to blame and reprimand them",
+      "Add more last-minute reviews without changing anything else",
+      "Hold a blameless retrospective to find systemic causes and agree on process changes",
+      "Stop documenting rushed releases"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A blameless retrospective examines the system and process, not individuals, to uncover root causes (for example late SME input or no review gate) and commit to concrete improvements. Blame suppresses honesty and does not fix underlying causes.",
+    "reference": {
+      "title": "Atlassian - Blameless Postmortems",
+      "url": "https://www.atlassian.com/incident-management/postmortem/blameless"
+    },
+    "realWorldExample": "The retro reveals docs started too late in the cycle, so the team adds a 'docs in definition of done' policy.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0026",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "negotiation",
+      "quality-vs-deadline"
+    ],
+    "question": "Leadership wants to ship docs on a date you believe is too soon for adequate quality. What is the strongest professional response?",
+    "options": [
+      "Agree and hope the quality issues go unnoticed",
+      "Refuse to ship on principle",
+      "Ship low-quality docs and blame the deadline publicly",
+      "Quantify the risk and propose options: a reduced but complete scope by the date, or the full scope slightly later, and let leadership choose"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Presenting a clear risk assessment plus concrete, viable options (a minimum-viable-but-accurate set now, or full coverage slightly later) turns a standoff into an informed leadership decision. Silent compliance or flat refusal both erode trust and outcomes.",
+    "reference": {
+      "title": "Harvard Business Review - Presenting Options to Decision-Makers",
+      "url": "https://hbr.org/2016/06/how-to-present-to-senior-executives"
+    },
+    "realWorldExample": "The writer offers 'a complete quickstart and API reference by Friday, with advanced guides the following week', and leadership picks that path.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0027",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "mentoring",
+      "knowledge-sharing"
+    ],
+    "question": "As a senior writer onboarding a junior colleague, which practice best builds their long-term capability?",
+    "options": [
+      "Explain your reasoning and coach them through decisions, gradually increasing their ownership",
+      "Do the hard tasks yourself so they only see finished work",
+      "Give only pass/fail judgments on their drafts",
+      "Avoid giving feedback to prevent discouragement"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Effective mentoring makes tacit reasoning explicit and lets the mentee practice decisions with support, progressively handing over ownership. Shielding them from hard work or giving only verdicts without reasoning stunts their growth.",
+    "reference": {
+      "title": "Harvard Business Review - What Great Mentorship Looks Like",
+      "url": "https://hbr.org/2022/11/what-efficient-mentorship-looks-like"
+    },
+    "realWorldExample": "The senior writer talks through why they restructured a guide, then has the junior lead the next restructure with feedback.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0028",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "cross-cultural",
+      "global-teams"
+    ],
+    "question": "Working with globally distributed SMEs and reviewers, which practice most improves communication effectiveness?",
+    "options": [
+      "Assume everyone shares your idioms and communication norms",
+      "Use clear, plain language, confirm understanding, and be mindful of time zones and cultural communication differences",
+      "Schedule all meetings in your own time zone only",
+      "Communicate exclusively through informal slang"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cross-cultural collaboration improves when you use plain, unambiguous language, verify shared understanding, and accommodate time-zone and cultural differences in communication style. Assuming shared idioms or forcing your own norms creates misunderstandings and friction.",
+    "reference": {
+      "title": "Harvard Business Review - Communicating Across Cultures",
+      "url": "https://hbr.org/2014/08/what-you-need-to-know-about-collaborating-across-cultures"
+    },
+    "realWorldExample": "A writer avoids sports idioms, summarizes agreements in writing, and rotates meeting times to share the time-zone burden.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0029",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "decision-making",
+      "user-advocacy"
+    ],
+    "question": "A popular internal preference conflicts with what user research shows real users need. As the docs professional, what should guide your decision?",
+    "options": [
+      "Always defer to the most senior person's preference",
+      "Do whatever is fastest to implement",
+      "Advocate for the user, presenting the research evidence while acknowledging stakeholder concerns",
+      "Poll the team and follow the majority regardless of evidence"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Technical writers serve users. When internal preference clashes with evidence of real user needs, the professional stance is to advocate for users using the research, while engaging stakeholders respectfully. Seniority, speed, or popularity alone should not override demonstrated user need.",
+    "reference": {
+      "title": "Nielsen Norman Group - The User Experience Advocate Role",
+      "url": "https://www.nngroup.com/articles/ux-advocate/"
+    },
+    "realWorldExample": "Usability testing shows users need a conceptual overview first; the writer presents this to overrule an exec's 'jump straight to steps' preference.",
+    "estimatedTime": 60,
+    "status": "published"
+  },
+  {
+    "schemaVersion": "1.0",
+    "id": "PRO-0030",
+    "skill": "professional-skills",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "tags": [
+      "information-gathering",
+      "reverse-engineering"
+    ],
+    "question": "You must document a legacy feature whose original SMEs have left and whose specs are missing. What is the most reliable professional approach?",
+    "options": [
+      "Invent plausible behavior and publish it",
+      "Copy documentation from a competitor's product",
+      "Skip the feature and hope no one asks",
+      "Triangulate from multiple sources: test the feature directly, read the code/logs, and validate findings with any available current owners"
+    ],
+    "correctAnswer": 3,
+    "explanation": "With no SME or spec, reliable documentation comes from triangulating evidence, exercising the feature, examining code or logs, and validating conclusions with whoever now owns the area. Inventing behavior or copying a competitor risks publishing inaccurate, misleading content.",
+    "reference": {
+      "title": "Write the Docs - Documenting existing/undocumented systems",
+      "url": "https://www.writethedocs.org/guide/writing/docs-principles/"
+    },
+    "realWorldExample": "The writer runs the feature through test cases, cross-checks the source code, and confirms edge cases with the current maintainer before documenting it.",
+    "estimatedTime": 60,
+    "status": "published"
+  }
+]
