@@ -37,6 +37,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
           NEXT_PUBLIC_CLARITY_ID: ${{ secrets.NEXT_PUBLIC_CLARITY_ID }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

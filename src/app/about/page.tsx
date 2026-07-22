@@ -1,8 +1,14 @@
-'use client';
-
+import type { Metadata } from 'next';
 import React from 'react';
 import { Card } from '../../components/common/Card';
 import { Badge } from '../../components/common/Badge';
+import { SITE_NAME } from '../../lib/siteConfig';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: `${SITE_NAME} is a professional learning and practice platform for technical writers, content designers, and documentation engineers — covering style guides, API docs, and Docs-as-Code workflows.`,
+  alternates: { canonical: '/about' },
+};
 
 export default function AboutPage() {
   return (

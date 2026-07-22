@@ -1,8 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { RootLayoutClient } from "../components/layout/RootLayoutClient";
 import { GA_MEASUREMENT_ID, CLARITY_PROJECT_ID } from "../lib/analytics";
+import {
+  SITE_NAME,
+  SITE_TAGLINE,
+  SITE_URL,
+  SITE_DESCRIPTION,
+} from "../lib/siteConfig";
+import { organizationSchema, webSiteSchema } from "../lib/structuredData";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -11,8 +18,45 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Technical Writing Practice Platform | SkillDrill",
-  description: "Sharpen your documentation skills with interview-ready quizzes covering APIs, style guides, AI, Docs-as-Code, and more.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_TAGLINE} | ${SITE_NAME}`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  keywords: [
+    "technical writing",
+    "documentation",
+    "API documentation",
+    "docs-as-code",
+    "style guides",
+    "technical writer interview",
+    "quiz",
+    "practice",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: `${SITE_TAGLINE} | ${SITE_NAME}`,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_TAGLINE} | ${SITE_NAME}`,
+    description: SITE_DESCRIPTION,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0d1117",
+  colorScheme: "dark light",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -27,6 +71,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([organizationSchema(), webSiteSchema()]),
+          }}
+        />
         {GA_MEASUREMENT_ID ? (
           <>
             <script
