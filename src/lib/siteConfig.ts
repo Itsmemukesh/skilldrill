@@ -9,8 +9,15 @@ import { SkillCategory } from '../types';
  * via `absoluteUrl()` so we never rely on relative metadataBase resolution
  * (which can double the basePath under static export).
  */
+const DEFAULT_SITE_URL = 'https://itsmemukesh.github.io/skilldrill';
+
+/**
+ * Falls back to the default when the env var is missing OR blank. CI injects an
+ * empty string for an undefined repository variable, and `??` would not catch
+ * that — leaving `new URL('')` to throw ERR_INVALID_URL during static export.
+ */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://itsmemukesh.github.io/skilldrill'
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || DEFAULT_SITE_URL
 ).replace(/\/$/, '');
 
 export const SITE_NAME = 'SkillDrill';
