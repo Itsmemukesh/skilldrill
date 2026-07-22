@@ -28,7 +28,7 @@ export default function AboutPage() {
           <Card>
             <h3 className="text-lg font-mono font-bold text-text-main mb-3">The Vision</h3>
             <p className="text-sm text-text-sec leading-relaxed">
-              Create a sleek, developer-centric learning experience inspired by GitHub, Linear, and Vercel. We avoid gamified, childish aesthetics in favor of a clean, high-density environment that fits naturally into an engineer's daily routine.
+              Create a sleek, developer-centric learning experience inspired by GitHub, Linear, and Vercel. Progression is motivating without being childish — streaks, XP, and a contribution-style activity graph reward consistency inside a clean, high-density environment that fits naturally into an engineer's daily routine.
             </p>
           </Card>
           <Card>
@@ -80,15 +80,15 @@ export default function AboutPage() {
                 Static dashboard, 8 core skill tags, timer preferences, local scoring history, lightweight Next.js app, and responsive monochrome design system.
               </p>
             </div>
-            
+
             <div className="relative pl-6 border-l-2 border-border-base">
-              <div className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-border-base"></div>
+              <div className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-accent-base"></div>
               <div className="flex items-center gap-2 mb-1">
-                <h4 className="font-mono font-bold text-text-main">Phase 2: Persistent Storage & Streaks</h4>
-                <Badge variant="neutral">Upcoming</Badge>
+                <h4 className="font-mono font-bold text-text-main">Phase 2: Streaks, XP & Review</h4>
+                <Badge variant="success">Current</Badge>
               </div>
               <p className="text-sm text-text-sec leading-relaxed">
-                Supabase integration, user profiles, daily streak tracker, and weekly community leaderboards to build consistency habits.
+                Daily streak tracker, XP and levels, achievement badges, a contribution-style activity heatmap, spaced-repetition review of missed questions, bookmarks, and a full local progress dashboard — all stored in your browser, no account required.
               </p>
             </div>
 
@@ -100,6 +100,17 @@ export default function AboutPage() {
               </div>
               <p className="text-sm text-text-sec leading-relaxed">
                 Scenario-based choices, markdown syntax repair, API responses schema mapping, and interactive editing challenges.
+              </p>
+            </div>
+
+            <div className="relative pl-6 border-l-2 border-border-base">
+              <div className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-border-base"></div>
+              <div className="flex items-center gap-2 mb-1">
+                <h4 className="font-mono font-bold text-text-main">Phase 3.5: Accounts & Community</h4>
+                <Badge variant="neutral">Planned</Badge>
+              </div>
+              <p className="text-sm text-text-sec leading-relaxed">
+                Optional cloud sync, user profiles, and weekly community leaderboards to carry progress across devices and build shared consistency habits.
               </p>
             </div>
 

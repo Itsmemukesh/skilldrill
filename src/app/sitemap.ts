@@ -16,7 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: absoluteUrl('/'), lastModified: now, changeFrequency: 'daily', priority: 1 },
     { url: absoluteUrl('/practice'), lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    { url: absoluteUrl('/docs'), lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: absoluteUrl('/about'), lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: absoluteUrl('/contact'), lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: absoluteUrl('/privacy'), lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: absoluteUrl('/terms'), lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: absoluteUrl('/disclaimer'), lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
   ];
 
   const skillRoutes: MetadataRoute.Sitemap = READY_SKILLS.map((skill) => ({

@@ -1,22 +1,66 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from '../../hooks/useTheme';
 import { useQuizNavigation } from '../../contexts/QuizNavigationContext';
+import { getGamificationState, displayStreak } from '../../services/gamificationService';
+
+// Primary links stay in the nav bar; secondary/info + legal pages live under "More".
+const PRIMARY_LINKS = [
+  { href: '/', label: 'Dashboard' },
+  { href: '/practice', label: 'Practice' },
+  { href: '/stats', label: 'Stats' },
+  { href: '/docs', label: 'Docs' },
+];
+
+const MORE_LINKS = [
+  { href: '/about', label: 'About' },
+  { href: '/settings', label: 'Settings' },
+  { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/terms', label: 'Terms & Conditions' },
+  { href: '/disclaimer', label: 'Disclaimer' },
+  { href: '/contact', label: 'Contact' },
+];
 
 export const TopNav: React.FC = () => {
   const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
   const { isQuizActive, requestNavigation } = useQuizNavigation();
+  const [streak, setStreak] = useState(0);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const moreRef = useRef<HTMLDivElement | null>(null);
 
-  const navLinks = [
-    { href: '/', label: 'Dashboard' },
-    { href: '/practice', label: 'Practice' },
-    { href: '/about', label: 'About' },
-    { href: '/settings', label: 'Settings' }
-  ];
+  // Reflect the current streak in the nav; refresh when the route changes so it
+  // updates after completing a quiz.
+  useEffect(() => {
+    setStreak(displayStreak(getGamificationState()));
+  }, [pathname]);
+
+  // Close the "More" dropdown on route change and on outside click / Escape.
+  useEffect(() => {
+    setMoreOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!moreOpen) return;
+    const onClick = (e: MouseEvent) => {
+      if (moreRef.current && !moreRef.current.contains(e.target as Node)) setMoreOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMoreOpen(false);
+    };
+    document.addEventListener('mousedown', onClick);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onClick);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [moreOpen]);
+
+  const navLinks = PRIMARY_LINKS;
+  const moreActive = MORE_LINKS.some((l) => l.href === pathname);
 
   const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (!isQuizActive) return;
@@ -58,11 +102,75 @@ export const TopNav: React.FC = () => {
                 </Link>
               );
             })}
+
+            {/* "More" dropdown: secondary + legal pages */}
+            <div className="relative" ref={moreRef}>
+              <button
+                type="button"
+                onClick={() => setMoreOpen((o) => !o)}
+                aria-haspopup="menu"
+                aria-expanded={moreOpen}
+                className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium transition-colors cursor-pointer ${
+                  moreActive || moreOpen
+                    ? 'text-text-main bg-surface-base border border-border-base'
+                    : 'text-text-sec hover:text-text-main hover:bg-surface-hover border border-transparent'
+                }`}
+              >
+                More
+                <svg
+                  className={`h-3.5 w-3.5 transition-transform ${moreOpen ? 'rotate-180' : ''}`}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+
+              {moreOpen && (
+                <div
+                  role="menu"
+                  className="absolute left-0 mt-2 w-48 rounded-md border border-border-base bg-surface-base shadow-lg py-1 z-50"
+                >
+                  {MORE_LINKS.map((link) => {
+                    const isActive = pathname === link.href;
+                    return (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        role="menuitem"
+                        onClick={(e) => handleNavClick(e, link.href)}
+                        className={`block px-3 py-2 text-sm transition-colors ${
+                          isActive
+                            ? 'text-text-main bg-surface-hover font-medium'
+                            : 'text-text-sec hover:text-text-main hover:bg-surface-hover'
+                        }`}
+                      >
+                        {link.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
           </nav>
         </div>
 
         {/* Right actions: Theme toggle and mobile nav trigger */}
         <div className="flex items-center gap-2">
+          {streak > 0 && (
+            <Link
+              href="/stats"
+              onClick={(e) => handleNavClick(e, '/stats')}
+              className="inline-flex items-center gap-1 px-2 py-1 rounded-md border border-warning-base/40 bg-warning-bg/10 font-mono text-xs font-bold text-warning-base"
+              title={`${streak}-day practice streak`}
+            >
+              🔥 {streak}
+            </Link>
+          )}
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
@@ -104,22 +212,41 @@ export const TopNav: React.FC = () => {
       </div>
 
       {/* Mobile nav bar indicator */}
-      <div className="md:hidden flex border-t border-border-base bg-surface-base justify-around py-1">
-        {navLinks.map((link) => {
-          const isActive = pathname === link.href;
-          return (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={(e) => handleNavClick(e, link.href)}
-              className={`text-xs font-medium py-1 px-3 rounded ${
-                isActive ? 'text-accent-base font-bold' : 'text-text-sec'
-              }`}
-            >
-              {link.label}
-            </Link>
-          );
-        })}
+      <div className="md:hidden border-t border-border-base bg-surface-base">
+        <div className="flex justify-around py-1">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className={`text-xs font-medium py-1 px-3 rounded ${
+                  isActive ? 'text-accent-base font-bold' : 'text-text-sec'
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
+        <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 border-t border-border-base/60 py-1 px-3">
+          {MORE_LINKS.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className={`text-[11px] py-0.5 ${
+                  isActive ? 'text-accent-base font-bold' : 'text-text-mute'
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </header>
   );

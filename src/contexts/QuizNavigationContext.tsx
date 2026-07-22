@@ -63,9 +63,9 @@ export function QuizNavigationProvider({ children }: { children: React.ReactNode
       {children}
       <ConfirmDialog
         open={pendingHref !== null}
-        title="Quit quiz?"
-        description="Your current progress will be lost and this session won't be saved. Are you sure you want to leave?"
-        confirmLabel="Quit Quiz"
+        title="Leave quiz?"
+        description="Your progress is saved — you can resume this session later from the practice page. Leave now?"
+        confirmLabel="Leave Quiz"
         cancelLabel="Keep Practicing"
         onConfirm={handleConfirmQuit}
         onCancel={handleCancelQuit}

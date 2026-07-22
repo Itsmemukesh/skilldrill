@@ -1,12 +1,14 @@
-import { UserPreferences, HistoryRecord, SkillCategory } from '../types';
+import { UserPreferences, HistoryRecord, SkillCategory, PersistedSession, QuizSessionState } from '../types';
 
 const THEME_KEY = 'skilldrill_theme';
 const PREFERENCES_KEY = 'skilldrill_preferences';
 const HISTORY_KEY = 'skilldrill_history';
 const LAST_SKILL_KEY = 'skilldrill_last_skill';
+const ACTIVE_SESSION_KEY = 'skilldrill_active_session';
 
 const DEFAULT_PREFERENCES: UserPreferences = {
   theme: 'dark', // GitHub-inspired dark by default as per vision
+  timerEnabled: false, // Untimed "Learn" mode by default (UX-03); less punitive for daily habit
   timerDuration: 30,
   defaultQuestionCount: 10,
   defaultDifficulty: 'mixed',
@@ -90,4 +92,38 @@ export const getLastPracticedSkill = (): SkillCategory | null => {
 export const saveLastPracticedSkill = (skill: SkillCategory): void => {
   if (!isBrowser()) return;
   localStorage.setItem(LAST_SKILL_KEY, skill);
+};
+
+// ==================== Active session persistence (UX-01) ====================
+
+export const saveActiveSession = (session: QuizSessionState): void => {
+  if (!isBrowser()) return;
+  try {
+    const payload: PersistedSession = { session, savedAt: new Date().toISOString() };
+    localStorage.setItem(ACTIVE_SESSION_KEY, JSON.stringify(payload));
+  } catch (e) {
+    console.error('Error saving active session to localStorage', e);
+  }
+};
+
+export const getActiveSession = (): PersistedSession | null => {
+  if (!isBrowser()) return null;
+  try {
+    const saved = localStorage.getItem(ACTIVE_SESSION_KEY);
+    if (!saved) return null;
+    const parsed = JSON.parse(saved) as PersistedSession;
+    // Basic shape guard against stale/corrupt data from older schema versions.
+    if (!parsed?.session?.questions?.length || parsed.session.completed) {
+      return null;
+    }
+    return parsed;
+  } catch (e) {
+    console.error('Error parsing active session from localStorage', e);
+    return null;
+  }
+};
+
+export const clearActiveSession = (): void => {
+  if (!isBrowser()) return;
+  localStorage.removeItem(ACTIVE_SESSION_KEY);
 };

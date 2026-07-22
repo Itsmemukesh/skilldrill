@@ -6,7 +6,11 @@ import { Card } from '../components/common/Card';
 import { Button } from '../components/common/Button';
 import { Badge } from '../components/common/Badge';
 import { getHistory } from '../services/localStorageService';
-import { SkillCategory, HistoryRecord } from '../types';
+import { getGamificationState, displayStreak } from '../services/gamificationService';
+import { getDueReviewCount } from '../services/reviewService';
+import { levelFromXp } from '../lib/levels';
+import { LevelBar } from '../components/gamification/GamificationWidgets';
+import { SkillCategory, HistoryRecord, GamificationState } from '../types';
 import { SKILLS, getSkillName as getSkillNameFromConfig } from '../lib/siteConfig';
 
 interface DashboardPageProps {
@@ -15,10 +19,18 @@ interface DashboardPageProps {
 
 export default function DashboardPage({ questionCounts }: DashboardPageProps) {
   const [history, setHistory] = useState<HistoryRecord[]>([]);
+  const [gamification, setGamification] = useState<GamificationState | null>(null);
+  const [dueReview, setDueReview] = useState(0);
 
   useEffect(() => {
     setHistory(getHistory());
+    setGamification(getGamificationState());
+    setDueReview(getDueReviewCount());
   }, []);
+
+  const streak = gamification ? displayStreak(gamification) : 0;
+  const level = gamification ? levelFromXp(gamification.xp) : null;
+  const hasProgress = !!gamification && gamification.totalQuizzes > 0;
 
   const getSkillName = (id: SkillCategory) => getSkillNameFromConfig(id);
 
@@ -47,6 +59,50 @@ export default function DashboardPage({ questionCounts }: DashboardPageProps) {
         </div>
       </section>
 
+      {/* 1b. Progress strip (GAM-01/02/04) */}
+      {hasProgress && level && gamification && (
+        <section className="mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <Card className="flex items-center gap-4">
+              <span className="text-4xl" aria-hidden="true">🔥</span>
+              <div>
+                <span className="block text-xs font-mono text-text-sec">CURRENT STREAK</span>
+                <span className="text-2xl font-extrabold text-text-main">{streak} day{streak === 1 ? '' : 's'}</span>
+                <span className="block text-[11px] font-mono text-text-mute">Longest: {gamification.streak.longest}</span>
+              </div>
+            </Card>
+
+            <Card className="lg:col-span-1">
+              <LevelBar level={level} xp={gamification.xp} />
+            </Card>
+
+            <Card className="flex flex-col justify-between">
+              {dueReview > 0 ? (
+                <>
+                  <div>
+                    <span className="block text-xs font-mono text-text-sec mb-1">REVIEW DUE</span>
+                    <span className="text-2xl font-extrabold text-accent-base">{dueReview} question{dueReview === 1 ? '' : 's'}</span>
+                  </div>
+                  <Link href="/practice?mode=review" className="mt-3">
+                    <Button variant="primary" size="sm" fullWidth>Review Missed</Button>
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <div>
+                    <span className="block text-xs font-mono text-text-sec mb-1">PROGRESS</span>
+                    <span className="text-sm text-text-sec">Streak, XP, badges, and accuracy trends.</span>
+                  </div>
+                  <Link href="/stats" className="mt-3">
+                    <Button variant="secondary" size="sm" fullWidth>View Full Stats</Button>
+                  </Link>
+                </>
+              )}
+            </Card>
+          </div>
+        </section>
+      )}
+
       {/* 2. Quick Actions Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         <Card hoverable className="flex flex-col h-full">
@@ -58,7 +114,7 @@ export default function DashboardPage({ questionCounts }: DashboardPageProps) {
           </div>
           <h3 className="text-lg font-mono font-bold text-text-main mb-2">Daily Challenge</h3>
           <p className="text-sm text-text-sec mb-6 flex-1">
-            Test yourself with today's 10-question mixed fundamentals and API documentation challenge.
+            Test yourself with today&apos;s 10-question challenge — a fresh mix drawn from every skill category.
           </p>
           <Link href="/practice?mode=daily" className="mt-auto">
             <Button variant="primary" fullWidth>Launch Challenge</Button>
@@ -129,9 +185,16 @@ export default function DashboardPage({ questionCounts }: DashboardPageProps) {
 
       {/* 4. Recent Performance */}
       <section>
-        <h2 className="font-mono text-2xl font-bold text-text-main mb-6 pb-2 border-b border-border-base">
-          Recent Performance
-        </h2>
+        <div className="flex items-center justify-between mb-6 pb-2 border-b border-border-base">
+          <h2 className="font-mono text-2xl font-bold text-text-main">
+            Recent Performance
+          </h2>
+          {hasProgress && (
+            <Link href="/stats" className="font-mono text-sm text-accent-base hover:underline">
+              View all stats →
+            </Link>
+          )}
+        </div>
 
         {history.length === 0 ? (
           <Card className="text-center py-12">

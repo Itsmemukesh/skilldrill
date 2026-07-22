@@ -3,19 +3,22 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from '../../components/common/Card';
 import { Button } from '../../components/common/Button';
+import { ConfirmDialog } from '../../components/common/ConfirmDialog';
 import {
   getUserPreferences,
   saveUserPreferences,
   clearHistory,
+  clearActiveSession,
   setThemePreference
 } from '../../services/localStorageService';
-import { useTheme } from '../../hooks/useTheme';
+import { clearGamification } from '../../services/gamificationService';
+import { clearReviewPool, clearBookmarks } from '../../services/reviewService';
 import { Difficulty, UserPreferences } from '../../types';
 
 export default function SettingsClient() {
-  const { theme, toggleTheme } = useTheme();
   const [preferences, setPreferences] = useState<UserPreferences | null>(null);
   const [resetStatus, setResetStatus] = useState<string | null>(null);
+  const [resetConfirmOpen, setResetConfirmOpen] = useState(false);
 
   useEffect(() => {
     setPreferences(getUserPreferences());
@@ -49,24 +52,28 @@ export default function SettingsClient() {
     }
   };
 
-  const handleResetHistory = () => {
-    if (confirm('Are you sure you want to delete all practice scores and reset preferences? This cannot be undone.')) {
-      clearHistory();
+  const performReset = () => {
+    setResetConfirmOpen(false);
+    clearHistory();
+    clearActiveSession();
+    clearGamification();
+    clearReviewPool();
+    clearBookmarks();
 
-      const defaultPrefs: UserPreferences = {
-        theme: 'dark',
-        timerDuration: 30,
-        defaultQuestionCount: 10,
-        defaultDifficulty: 'mixed',
-      };
+    const defaultPrefs: UserPreferences = {
+      theme: 'dark',
+      timerEnabled: false,
+      timerDuration: 30,
+      defaultQuestionCount: 10,
+      defaultDifficulty: 'mixed',
+    };
 
-      setPreferences(defaultPrefs);
-      saveUserPreferences(defaultPrefs);
-      handleThemeChange('dark');
+    setPreferences(defaultPrefs);
+    saveUserPreferences(defaultPrefs);
+    handleThemeChange('dark');
 
-      setResetStatus('Local data reset successfully.');
-      setTimeout(() => setResetStatus(null), 3000);
-    }
+    setResetStatus('Local data reset successfully.');
+    setTimeout(() => setResetStatus(null), 3000);
   };
 
   if (!preferences) {
@@ -108,26 +115,51 @@ export default function SettingsClient() {
             </p>
           </Card>
 
-          {/* Quiz Timer Default */}
+          {/* Quiz Timer Mode + Default */}
           <Card>
-            <h3 className="text-base font-mono font-bold text-text-main mb-4">Default Question Timer</h3>
+            <h3 className="text-base font-mono font-bold text-text-main mb-4">Timer Mode</h3>
+            <div className="grid grid-cols-2 gap-2 mb-4">
+              <button
+                onClick={() => handlePreferencesChange('timerEnabled', false)}
+                className={`py-2 px-3 text-sm font-mono font-medium rounded-md border text-center transition-colors cursor-pointer ${
+                  !preferences.timerEnabled
+                    ? 'bg-accent-base text-white border-transparent'
+                    : 'bg-surface-base text-text-main border-border-base hover:bg-surface-hover'
+                }`}
+              >
+                Learn (Untimed)
+              </button>
+              <button
+                onClick={() => handlePreferencesChange('timerEnabled', true)}
+                className={`py-2 px-3 text-sm font-mono font-medium rounded-md border text-center transition-colors cursor-pointer ${
+                  preferences.timerEnabled
+                    ? 'bg-accent-base text-white border-transparent'
+                    : 'bg-surface-base text-text-main border-border-base hover:bg-surface-hover'
+                }`}
+              >
+                Timed
+              </button>
+            </div>
+
+            <label className="block text-xs font-mono text-text-sec mb-2">DEFAULT QUESTION TIMER</label>
             <div className="grid grid-cols-4 gap-2">
               {([15, 30, 45, 60] as const).map((seconds) => (
                 <button
                   key={seconds}
+                  disabled={!preferences.timerEnabled}
                   onClick={() => handlePreferencesChange('timerDuration', seconds)}
                   className={`py-2 px-1 text-sm font-mono font-medium rounded-md border text-center transition-colors cursor-pointer ${
                     preferences.timerDuration === seconds
                       ? 'bg-accent-base text-white border-transparent'
                       : 'bg-surface-base text-text-main border-border-base hover:bg-surface-hover'
-                  }`}
+                  } ${!preferences.timerEnabled ? 'opacity-40 cursor-not-allowed' : ''}`}
                 >
                   {seconds}s
                 </button>
               ))}
             </div>
             <p className="text-xs text-text-mute mt-3 leading-relaxed">
-              Change the countdown duration allowed per question. Expiration counts as an incorrect submission.
+              In Learn mode there is no countdown — answer at your own pace. In Timed mode, expiration counts as an incorrect submission.
             </p>
           </Card>
 
@@ -182,7 +214,7 @@ export default function SettingsClient() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-              <Button variant="danger" size="sm" onClick={handleResetHistory}>
+              <Button variant="danger" size="sm" onClick={() => setResetConfirmOpen(true)}>
                 Clear All Data
               </Button>
               {resetStatus && (
@@ -194,6 +226,16 @@ export default function SettingsClient() {
           </Card>
 
         </div>
+
+        <ConfirmDialog
+          open={resetConfirmOpen}
+          title="Clear all data?"
+          description="This deletes all practice scores, streak, XP, badges, review pool, bookmarks, and any in-progress quiz, and resets preferences to defaults. This cannot be undone."
+          confirmLabel="Clear All Data"
+          cancelLabel="Cancel"
+          onConfirm={performReset}
+          onCancel={() => setResetConfirmOpen(false)}
+        />
       </div>
   );
 }

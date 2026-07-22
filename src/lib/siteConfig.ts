@@ -20,6 +20,16 @@ export const SITE_TAGLINE = 'Technical Writing Practice Platform';
 export const SITE_DESCRIPTION =
   'Sharpen your documentation skills with interview-ready quizzes covering APIs, style guides, AI, Docs-as-Code, and more.';
 
+/** GitHub handle + repo used for contact and source links. */
+export const GITHUB_USER = 'Itsmemukesh';
+export const GITHUB_REPO = 'skilldrill';
+export const GITHUB_PROFILE_URL = `https://github.com/${GITHUB_USER}`;
+export const GITHUB_REPO_URL = `https://github.com/${GITHUB_USER}/${GITHUB_REPO}`;
+export const GITHUB_ISSUES_URL = `${GITHUB_REPO_URL}/issues`;
+
+/** Date the legal pages were last reviewed (shown as "Last updated"). */
+export const LEGAL_LAST_UPDATED = 'July 22, 2026';
+
 /** Build an absolute URL for a path within the site (path should start with "/"). */
 export function absoluteUrl(path = ''): string {
   if (!path || path === '/') return SITE_URL;
